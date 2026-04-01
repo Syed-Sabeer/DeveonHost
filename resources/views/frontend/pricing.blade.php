@@ -1,0 +1,3974 @@
+@extends('layouts.frontend.master')
+
+@section('meta')
+
+@endsection
+
+@section('css')
+
+@endsection
+
+@section('content')
+ <main class="main-area fix">
+
+        <!-- breadcrumb-area -->
+        <section class="breadcrumb__area breadcrumb__area-three">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb__content">
+                            <nav class="breadcrumb">
+                                <span property="itemListElement" typeof="ListItem">
+                                    <a href="index.html">Home</a>
+                                </span>
+                                <span class="breadcrumb-separator">//</span>
+                                <span property="itemListElement" typeof="ListItem">Pricing</span>
+                            </nav>
+                            <h2 class="title">Start Hosting Today Pick a Plan That Fits</h2>
+                            <div class="breadcrumb__menu">
+                                <ul class="list-wrap">
+                                    <li><a href="#web">Web Hosting</a></li>
+                                    <li><a href="#wordPress">WordPress Hosting</a></li>
+                                    <li><a href="#shared">Shared Hosting <span>50% OFF</span></a></li>
+                                    <li><a href="#cloud">Cloud Hosting</a></li>
+                                    <li><a href="#VPS">VPS Hosting</a></li>
+                                    <li><a href="#dedicated">Dedicated Hosting</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shape">
+                <img src="assets/img/images/breadcrumb_shape.png" alt="">
+            </div>
+        </section>
+        <!-- breadcrumb-area-end -->
+
+        <!-- pricing-area -->
+        <section id="web" class="pricing__area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section__title section__title-two text-center mb-40">
+                            <h2 class="title"><span>Web Hosting</span> Plans That Fit Your Budget</h2>
+                            <p>Experience ultra-fast loading speeds globally for seamless performance and reliability anywhere in the world.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-tab pricing-tab-two pricing-tab-four">
+                    <span class="tab-btn monthly_tab_title">12 Months</span>
+                    <span class="pricing-tab-switcher"></span>
+                    <span class="tab-btn annual_tab_title">36 Months <strong>(save 30%)</strong></span>
+                </div>
+                <div class="pricing__item-wrap">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing__box pricing__box-two">
+                                <div class="pricing__plan">
+                                    <h4 class="title">Starter Plan</h4>
+                                    <p>Everything you need to your wbsite</p>
+                                </div>
+                                <div class="pricing__price">
+                                    <h2 class="price monthly_price">$4.50 <span>/month</span></h2>
+                                    <h2 class="price annual_price">$45.50 <span>/year</span></h2>
+                                    <p>$ 5.99 when you renew this plan</p>
+                                    <span class="price-off">50% OFF</span>
+                                </div>
+                                <div class="pricing__btn">
+                                    <a href="#!" class="tg-btn tg-border-btn">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.66797 7.5L12.168 10L9.66797 12.5" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M3 10C3 10.9849 3.19399 11.9602 3.5709 12.8701C3.94781 13.7801 4.50026 14.6069 5.1967 15.3033C5.89314 15.9997 6.71993 16.5522 7.62987 16.9291C8.53982 17.306 9.51509 17.5 10.5 17.5C11.4849 17.5 12.4602 17.306 13.3701 16.9291C14.2801 16.5522 15.1069 15.9997 15.8033 15.3033C16.4997 14.6069 17.0522 13.7801 17.4291 12.8701C17.806 11.9602 18 10.9849 18 10C18 8.01088 17.2098 6.10322 15.8033 4.6967C14.3968 3.29018 12.4891 2.5 10.5 2.5C8.51088 2.5 6.60322 3.29018 5.1967 4.6967C3.79018 6.10322 3 8.01088 3 10Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        Get Started
+                                    </a>
+                                </div>
+                                <div class="pricing__list">
+                                    <ul class="list-wrap">
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to 10 Website</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Stander Performance</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to <strong>30 GB</strong> Data Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>25 GB</strong> SSD Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Free</strong> & Automatic Website Migration</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Daily Backup</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>99.99</strong> Uptime Guarantee</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Unlimited Free <strong>SSL</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>24/7 Dedicated <strong>Support</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Powerful control panel</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Cache manager</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> cronjobs</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> FTP accounts</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pricing__select">
+                                    <span class="more-item">More Features</span>
+                                    <span class="less-item">Less Features</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing__box pricing__box-two">
+                                <div class="pricing__plan">
+                                    <h4 class="title">Business Plan <span class="tg-badge">Popular</span></h4>
+                                    <p>Everything you need to your wbsite</p>
+                                </div>
+                                <div class="pricing__price">
+                                    <h2 class="price monthly_price">$9.50 <span>/month</span></h2>
+                                    <h2 class="price annual_price">$90.50 <span>/year</span></h2>
+                                    <p>$ 5.99 when you renew this plan</p>
+                                    <span class="price-off">70% OFF</span>
+                                </div>
+                                <div class="pricing__btn">
+                                    <a href="#!" class="tg-btn tg-border-btn active">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.66797 7.5L12.168 10L9.66797 12.5" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M3 10C3 10.9849 3.19399 11.9602 3.5709 12.8701C3.94781 13.7801 4.50026 14.6069 5.1967 15.3033C5.89314 15.9997 6.71993 16.5522 7.62987 16.9291C8.53982 17.306 9.51509 17.5 10.5 17.5C11.4849 17.5 12.4602 17.306 13.3701 16.9291C14.2801 16.5522 15.1069 15.9997 15.8033 15.3033C16.4997 14.6069 17.0522 13.7801 17.4291 12.8701C17.806 11.9602 18 10.9849 18 10C18 8.01088 17.2098 6.10322 15.8033 4.6967C14.3968 3.29018 12.4891 2.5 10.5 2.5C8.51088 2.5 6.60322 3.29018 5.1967 4.6967C3.79018 6.10322 3 8.01088 3 10Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        Get Started
+                                    </a>
+                                </div>
+                                <div class="pricing__list">
+                                    <ul class="list-wrap">
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to 10 Website</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Stander Performance</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to <strong>30 GB</strong> Data Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>25 GB</strong> SSD Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Free</strong> & Automatic Website Migration</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Daily Backup</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>99.99</strong> Uptime Guarantee</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Unlimited Free <strong>SSL</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>24/7 Dedicated <strong>Support</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Powerful control panel</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Cache manager</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> cronjobs</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> FTP accounts</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pricing__select">
+                                    <span class="more-item">More Features</span>
+                                    <span class="less-item">Less Features</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing__box pricing__box-two">
+                                <div class="pricing__plan">
+                                    <h4 class="title">Enterprise Plan</h4>
+                                    <p>Everything you need to your wbsite</p>
+                                </div>
+                                <div class="pricing__price">
+                                    <h2 class="price monthly_price">$20.50 <span>/month</span></h2>
+                                    <h2 class="price annual_price">$200.50 <span>/year</span></h2>
+                                    <p>$ 5.99 when you renew this plan</p>
+                                    <span class="price-off">50% OFF</span>
+                                </div>
+                                <div class="pricing__btn">
+                                    <a href="#!" class="tg-btn tg-border-btn">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.66797 7.5L12.168 10L9.66797 12.5" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M3 10C3 10.9849 3.19399 11.9602 3.5709 12.8701C3.94781 13.7801 4.50026 14.6069 5.1967 15.3033C5.89314 15.9997 6.71993 16.5522 7.62987 16.9291C8.53982 17.306 9.51509 17.5 10.5 17.5C11.4849 17.5 12.4602 17.306 13.3701 16.9291C14.2801 16.5522 15.1069 15.9997 15.8033 15.3033C16.4997 14.6069 17.0522 13.7801 17.4291 12.8701C17.806 11.9602 18 10.9849 18 10C18 8.01088 17.2098 6.10322 15.8033 4.6967C14.3968 3.29018 12.4891 2.5 10.5 2.5C8.51088 2.5 6.60322 3.29018 5.1967 4.6967C3.79018 6.10322 3 8.01088 3 10Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        Get Started
+                                    </a>
+                                </div>
+                                <div class="pricing__list">
+                                    <ul class="list-wrap">
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to 10 Website</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Stander Performance</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to <strong>30 GB</strong> Data Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>25 GB</strong> SSD Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Free</strong> & Automatic Website Migration</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Daily Backup</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>99.99</strong> Uptime Guarantee</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Unlimited Free <strong>SSL</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>24/7 Dedicated <strong>Support</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Powerful control panel</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Cache manager</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> cronjobs</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> FTP accounts</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pricing__select">
+                                    <span class="more-item">More Features</span>
+                                    <span class="less-item">Less Features</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- pricing-area-end -->
+
+        <!-- pricing-area -->
+        <section id="cloud" class="pricing__area section-pt-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section__title section__title-two text-center mb-40">
+                            <h2 class="title"><span>Cloud Hosting</span> Plans That Fit Your Budget</h2>
+                            <p>Experience ultra-fast loading speeds globally for seamless performance and reliability anywhere in the world.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-tab pricing-tab-two pricing-tab-four">
+                    <span class="tab-btn monthly_tab_title">12 Months</span>
+                    <span class="pricing-tab-switcher"></span>
+                    <span class="tab-btn annual_tab_title">36 Months <strong>(save 30%)</strong></span>
+                </div>
+                <div class="pricing__item-wrap-three">
+                    <div class="row gx-0 justify-content-center">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing__box pricing__box-two pricing__box-six">
+                                <div class="pricing__plan">
+                                    <h4 class="title">Starter Plan</h4>
+                                    <p>Everything you need to your wbsite</p>
+                                </div>
+                                <div class="pricing__price">
+                                    <h2 class="price monthly_price">$4.50 <span>/month</span></h2>
+                                    <h2 class="price annual_price">$45.50 <span>/year</span></h2>
+                                    <p>$ 5.99 when you renew this plan</p>
+                                    <span class="price-off">50% OFF</span>
+                                </div>
+                                <div class="pricing__btn">
+                                    <a href="#!" class="tg-btn tg-border-btn">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.66797 7.5L12.168 10L9.66797 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M3 10C3 10.9849 3.19399 11.9602 3.5709 12.8701C3.94781 13.7801 4.50026 14.6069 5.1967 15.3033C5.89314 15.9997 6.71993 16.5522 7.62987 16.9291C8.53982 17.306 9.51509 17.5 10.5 17.5C11.4849 17.5 12.4602 17.306 13.3701 16.9291C14.2801 16.5522 15.1069 15.9997 15.8033 15.3033C16.4997 14.6069 17.0522 13.7801 17.4291 12.8701C17.806 11.9602 18 10.9849 18 10C18 8.01088 17.2098 6.10322 15.8033 4.6967C14.3968 3.29018 12.4891 2.5 10.5 2.5C8.51088 2.5 6.60322 3.29018 5.1967 4.6967C3.79018 6.10322 3 8.01088 3 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                          </svg>
+                                        Get Started
+                                    </a>
+                                </div>
+                                <div class="pricing__list">
+                                    <ul class="list-wrap">
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to 10 Website</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Stander Performance</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to <strong>30 GB</strong> Data Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>25 GB</strong> SSD Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Free</strong> & Automatic Website Migration</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Daily Backup</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>99.99</strong> Uptime Guarantee</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Unlimited Free <strong>SSL</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>24/7 Dedicated <strong>Support</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Powerful control panel</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Cache manager</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> cronjobs</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> FTP accounts</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pricing__select">
+                                    <span class="more-item">More Features</span>
+                                    <span class="less-item">Less Features</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing__box pricing__box-two pricing__box-six">
+                                <div class="pricing__plan">
+                                    <h4 class="title">Business Plan <span class="tg-badge">Popular</span></h4>
+                                    <p>Everything you need to your wbsite</p>
+                                </div>
+                                <div class="pricing__price">
+                                    <h2 class="price monthly_price">$9.50 <span>/month</span></h2>
+                                    <h2 class="price annual_price">$90.50 <span>/year</span></h2>
+                                    <p>$ 5.99 when you renew this plan</p>
+                                    <span class="price-off">70% OFF</span>
+                                </div>
+                                <div class="pricing__btn">
+                                    <a href="#!" class="tg-btn tg-border-btn active">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.66797 7.5L12.168 10L9.66797 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M3 10C3 10.9849 3.19399 11.9602 3.5709 12.8701C3.94781 13.7801 4.50026 14.6069 5.1967 15.3033C5.89314 15.9997 6.71993 16.5522 7.62987 16.9291C8.53982 17.306 9.51509 17.5 10.5 17.5C11.4849 17.5 12.4602 17.306 13.3701 16.9291C14.2801 16.5522 15.1069 15.9997 15.8033 15.3033C16.4997 14.6069 17.0522 13.7801 17.4291 12.8701C17.806 11.9602 18 10.9849 18 10C18 8.01088 17.2098 6.10322 15.8033 4.6967C14.3968 3.29018 12.4891 2.5 10.5 2.5C8.51088 2.5 6.60322 3.29018 5.1967 4.6967C3.79018 6.10322 3 8.01088 3 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                          </svg>
+                                        Get Started
+                                    </a>
+                                </div>
+                                <div class="pricing__list">
+                                    <ul class="list-wrap">
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to 10 Website</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Stander Performance</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to <strong>30 GB</strong> Data Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>25 GB</strong> SSD Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Free</strong> & Automatic Website Migration</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Daily Backup</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>99.99</strong> Uptime Guarantee</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Unlimited Free <strong>SSL</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>24/7 Dedicated <strong>Support</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Powerful control panel</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Cache manager</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> cronjobs</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> FTP accounts</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pricing__select">
+                                    <span class="more-item">More Features</span>
+                                    <span class="less-item">Less Features</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing__box pricing__box-two pricing__box-six">
+                                <div class="pricing__plan">
+                                    <h4 class="title">Enterprise Plan</h4>
+                                    <p>Everything you need to your wbsite</p>
+                                </div>
+                                <div class="pricing__price">
+                                    <h2 class="price monthly_price">$20.50 <span>/month</span></h2>
+                                    <h2 class="price annual_price">$200.50 <span>/year</span></h2>
+                                    <p>$ 5.99 when you renew this plan</p>
+                                    <span class="price-off">50% OFF</span>
+                                </div>
+                                <div class="pricing__btn">
+                                    <a href="#!" class="tg-btn tg-border-btn">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.66797 7.5L12.168 10L9.66797 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M3 10C3 10.9849 3.19399 11.9602 3.5709 12.8701C3.94781 13.7801 4.50026 14.6069 5.1967 15.3033C5.89314 15.9997 6.71993 16.5522 7.62987 16.9291C8.53982 17.306 9.51509 17.5 10.5 17.5C11.4849 17.5 12.4602 17.306 13.3701 16.9291C14.2801 16.5522 15.1069 15.9997 15.8033 15.3033C16.4997 14.6069 17.0522 13.7801 17.4291 12.8701C17.806 11.9602 18 10.9849 18 10C18 8.01088 17.2098 6.10322 15.8033 4.6967C14.3968 3.29018 12.4891 2.5 10.5 2.5C8.51088 2.5 6.60322 3.29018 5.1967 4.6967C3.79018 6.10322 3 8.01088 3 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                          </svg>
+                                        Get Started
+                                    </a>
+                                </div>
+                                <div class="pricing__list">
+                                    <ul class="list-wrap">
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to 10 Website</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Stander Performance</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to <strong>30 GB</strong> Data Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>25 GB</strong> SSD Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Free</strong> & Automatic Website Migration</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Daily Backup</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>99.99</strong> Uptime Guarantee</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Unlimited Free <strong>SSL</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>24/7 Dedicated <strong>Support</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Powerful control panel</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Cache manager</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> cronjobs</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> FTP accounts</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pricing__select">
+                                    <span class="more-item">More Features</span>
+                                    <span class="less-item">Less Features</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- pricing-area-end -->
+
+        <!-- pricing-area -->
+        <section id="wordPress" class="pricing__area section-pt-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section__title section__title-two text-center mb-40">
+                            <h2 class="title"><span>WordPress Hosting</span> Plans That Fit Your Budget</h2>
+                            <p>Experience ultra-fast loading speeds globally for seamless performance and reliability anywhere in the world.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-tab pricing-tab-two pricing-tab-four">
+                    <span class="tab-btn monthly_tab_title">12 Months</span>
+                    <span class="pricing-tab-switcher"></span>
+                    <span class="tab-btn annual_tab_title">36 Months <strong>(save 30%)</strong></span>
+                </div>
+                <div class="pricing__item-wrap">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing__box pricing__box-two">
+                                <div class="pricing__plan">
+                                    <h4 class="title">Starter Plan</h4>
+                                    <p>Everything you need to your wbsite</p>
+                                </div>
+                                <div class="pricing__price">
+                                    <h2 class="price monthly_price">$4.50 <span>/month</span></h2>
+                                    <h2 class="price annual_price">$45.50 <span>/year</span></h2>
+                                    <p>$ 5.99 when you renew this plan</p>
+                                    <span class="price-off">50% OFF</span>
+                                </div>
+                                <div class="pricing__btn">
+                                    <a href="#!" class="tg-btn tg-border-btn">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.66797 7.5L12.168 10L9.66797 12.5" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M3 10C3 10.9849 3.19399 11.9602 3.5709 12.8701C3.94781 13.7801 4.50026 14.6069 5.1967 15.3033C5.89314 15.9997 6.71993 16.5522 7.62987 16.9291C8.53982 17.306 9.51509 17.5 10.5 17.5C11.4849 17.5 12.4602 17.306 13.3701 16.9291C14.2801 16.5522 15.1069 15.9997 15.8033 15.3033C16.4997 14.6069 17.0522 13.7801 17.4291 12.8701C17.806 11.9602 18 10.9849 18 10C18 8.01088 17.2098 6.10322 15.8033 4.6967C14.3968 3.29018 12.4891 2.5 10.5 2.5C8.51088 2.5 6.60322 3.29018 5.1967 4.6967C3.79018 6.10322 3 8.01088 3 10Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        Get Started
+                                    </a>
+                                </div>
+                                <div class="pricing__list">
+                                    <ul class="list-wrap">
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to 10 Website</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Stander Performance</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to <strong>30 GB</strong> Data Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>25 GB</strong> SSD Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Free</strong> & Automatic Website Migration</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Daily Backup</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>99.99</strong> Uptime Guarantee</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Unlimited Free <strong>SSL</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>24/7 Dedicated <strong>Support</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Powerful control panel</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Cache manager</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> cronjobs</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> FTP accounts</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pricing__select">
+                                    <span class="more-item">More Features</span>
+                                    <span class="less-item">Less Features</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing__box pricing__box-two">
+                                <div class="pricing__plan">
+                                    <h4 class="title">Business Plan <span class="tg-badge">Popular</span></h4>
+                                    <p>Everything you need to your wbsite</p>
+                                </div>
+                                <div class="pricing__price">
+                                    <h2 class="price monthly_price">$9.50 <span>/month</span></h2>
+                                    <h2 class="price annual_price">$90.50 <span>/year</span></h2>
+                                    <p>$ 5.99 when you renew this plan</p>
+                                    <span class="price-off">70% OFF</span>
+                                </div>
+                                <div class="pricing__btn">
+                                    <a href="#!" class="tg-btn tg-border-btn active">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.66797 7.5L12.168 10L9.66797 12.5" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M3 10C3 10.9849 3.19399 11.9602 3.5709 12.8701C3.94781 13.7801 4.50026 14.6069 5.1967 15.3033C5.89314 15.9997 6.71993 16.5522 7.62987 16.9291C8.53982 17.306 9.51509 17.5 10.5 17.5C11.4849 17.5 12.4602 17.306 13.3701 16.9291C14.2801 16.5522 15.1069 15.9997 15.8033 15.3033C16.4997 14.6069 17.0522 13.7801 17.4291 12.8701C17.806 11.9602 18 10.9849 18 10C18 8.01088 17.2098 6.10322 15.8033 4.6967C14.3968 3.29018 12.4891 2.5 10.5 2.5C8.51088 2.5 6.60322 3.29018 5.1967 4.6967C3.79018 6.10322 3 8.01088 3 10Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        Get Started
+                                    </a>
+                                </div>
+                                <div class="pricing__list">
+                                    <ul class="list-wrap">
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to 10 Website</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Stander Performance</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to <strong>30 GB</strong> Data Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>25 GB</strong> SSD Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Free</strong> & Automatic Website Migration</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Daily Backup</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>99.99</strong> Uptime Guarantee</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Unlimited Free <strong>SSL</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>24/7 Dedicated <strong>Support</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Powerful control panel</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Cache manager</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> cronjobs</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> FTP accounts</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pricing__select">
+                                    <span class="more-item">More Features</span>
+                                    <span class="less-item">Less Features</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing__box pricing__box-two">
+                                <div class="pricing__plan">
+                                    <h4 class="title">Enterprise Plan</h4>
+                                    <p>Everything you need to your wbsite</p>
+                                </div>
+                                <div class="pricing__price">
+                                    <h2 class="price monthly_price">$20.50 <span>/month</span></h2>
+                                    <h2 class="price annual_price">$200.50 <span>/year</span></h2>
+                                    <p>$ 5.99 when you renew this plan</p>
+                                    <span class="price-off">50% OFF</span>
+                                </div>
+                                <div class="pricing__btn">
+                                    <a href="#!" class="tg-btn tg-border-btn">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.66797 7.5L12.168 10L9.66797 12.5" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M3 10C3 10.9849 3.19399 11.9602 3.5709 12.8701C3.94781 13.7801 4.50026 14.6069 5.1967 15.3033C5.89314 15.9997 6.71993 16.5522 7.62987 16.9291C8.53982 17.306 9.51509 17.5 10.5 17.5C11.4849 17.5 12.4602 17.306 13.3701 16.9291C14.2801 16.5522 15.1069 15.9997 15.8033 15.3033C16.4997 14.6069 17.0522 13.7801 17.4291 12.8701C17.806 11.9602 18 10.9849 18 10C18 8.01088 17.2098 6.10322 15.8033 4.6967C14.3968 3.29018 12.4891 2.5 10.5 2.5C8.51088 2.5 6.60322 3.29018 5.1967 4.6967C3.79018 6.10322 3 8.01088 3 10Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        Get Started
+                                    </a>
+                                </div>
+                                <div class="pricing__list">
+                                    <ul class="list-wrap">
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to 10 Website</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Stander Performance</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to <strong>30 GB</strong> Data Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>25 GB</strong> SSD Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Free</strong> & Automatic Website Migration</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Daily Backup</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>99.99</strong> Uptime Guarantee</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Unlimited Free <strong>SSL</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>24/7 Dedicated <strong>Support</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Powerful control panel</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Cache manager</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> cronjobs</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> FTP accounts</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pricing__select">
+                                    <span class="more-item">More Features</span>
+                                    <span class="less-item">Less Features</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- pricing-area-end -->
+
+        <!-- pricing-area -->
+        <section id="VPS" class="pricing__area section-pt-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section__title section__title-two text-center mb-40">
+                            <h2 class="title"><span>VPS Hosting</span> Plans That Fit Your Budget</h2>
+                            <p>Experience ultra-fast loading speeds globally for seamless performance and reliability anywhere in the world.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-tab pricing-tab-two pricing-tab-four">
+                    <span class="tab-btn monthly_tab_title">12 Months</span>
+                    <span class="pricing-tab-switcher"></span>
+                    <span class="tab-btn annual_tab_title">36 Months <strong>(save 30%)</strong></span>
+                </div>
+                <div class="pricing__item-wrap-two">
+                    <div class="row gutter-y-30 justify-content-center">
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="pricing__box-four pricing__box-five">
+                                <div class="pricing__box-top">
+                                    <div class="pricing__plan">
+                                        <h4 class="title">Starter <span class="price-off">50% OFF</span></h4>
+                                        <p>Everything you need to your wbsite</p>
+                                    </div>
+                                    <div class="pricing__price">
+                                        <h2 class="price monthly_price">$4.50 <span>/month</span></h2>
+                                        <h2 class="price annual_price">$45.50 <span>/month</span></h2>
+                                        <p>Will Charge $5.99 when you renew this plan</p>
+                                    </div>
+                                    <div class="pricing__btn">
+                                        <a href="#!" class="tg-btn">
+                                            Get Started
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.66797 10H16.3346" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13 13.3333L16.3333 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13 6.66663L16.3333 9.99996" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="pricing__box-bottom">
+                                    <div class="pricing__list">
+                                        <ul class="list-wrap">
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>1</strong> vCPU Core</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>4</strong> GB RAM</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>25</strong> GB SSD Storage</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>25 GB</strong> SSD Storage</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>2</strong> TB Bandwidth</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Daily Backup</span>
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Global Data Centers</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Unlimited Free <strong>SSL</strong></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="pricing__box-four pricing__box-five">
+                                <div class="pricing__box-top">
+                                    <div class="pricing__plan">
+                                        <h4 class="title">Business <span class="price-off">70% OFF</span></h4>
+                                        <p>Everything you need to your wbsite</p>
+                                    </div>
+                                    <div class="pricing__price">
+                                        <h2 class="price monthly_price">$9.50 <span>/month</span></h2>
+                                        <h2 class="price annual_price">$90.50 <span>/month</span></h2>
+                                        <p>Will Charge $5.99 when you renew this plan</p>
+                                    </div>
+                                    <div class="pricing__btn">
+                                        <a href="#!" class="tg-btn">
+                                            Get Started
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.66797 10H16.3346" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13 13.3333L16.3333 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13 6.66663L16.3333 9.99996" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="pricing__box-bottom">
+                                    <div class="pricing__list">
+                                        <ul class="list-wrap">
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>2</strong> vCPU Core</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>8</strong> GB RAM</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>80</strong> GB SSD Storage</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>25 GB</strong> SSD Storage</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>4</strong> TB Bandwidth</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Daily Backup</span>
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Global Data Centers</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Unlimited Free <strong>SSL</strong></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="pricing__box-four pricing__box-five">
+                                <div class="pricing__box-top">
+                                    <div class="pricing__plan">
+                                        <h4 class="title">Professional <span class="price-off active">Popular</span></h4>
+                                        <p>Everything you need to your wbsite</p>
+                                    </div>
+                                    <div class="pricing__price">
+                                        <h2 class="price monthly_price">$13.50 <span>/month</span></h2>
+                                        <h2 class="price annual_price">$130.50 <span>/month</span></h2>
+                                        <p>Will Charge $5.99 when you renew this plan</p>
+                                    </div>
+                                    <div class="pricing__btn">
+                                        <a href="#!" class="tg-btn">
+                                            Get Started
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.66797 10H16.3346" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13 13.3333L16.3333 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13 6.66663L16.3333 9.99996" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="pricing__box-bottom">
+                                    <div class="pricing__list">
+                                        <ul class="list-wrap">
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>4</strong> vCPU Core</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>16</strong> GB RAM</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>120</strong> GB SSD Storage</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>25 GB</strong> SSD Storage</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>8</strong> TB Bandwidth</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Daily Backup</span>
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Global Data Centers</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Unlimited Free <strong>SSL</strong></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="pricing__box-four pricing__box-five">
+                                <div class="pricing__box-top">
+                                    <div class="pricing__plan">
+                                        <h4 class="title">Enterprise <span class="price-off">50% OFF</span></h4>
+                                        <p>Everything you need to your wbsite</p>
+                                    </div>
+                                    <div class="pricing__price">
+                                        <h2 class="price monthly_price">$19.50 <span>/month</span></h2>
+                                        <h2 class="price annual_price">$190.50 <span>/month</span></h2>
+                                        <p>Will Charge $5.99 when you renew this plan</p>
+                                    </div>
+                                    <div class="pricing__btn">
+                                        <a href="#!" class="tg-btn">
+                                            Get Started
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.66797 10H16.3346" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13 13.3333L16.3333 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13 6.66663L16.3333 9.99996" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="pricing__box-bottom">
+                                    <div class="pricing__list">
+                                        <ul class="list-wrap">
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>8</strong> vCPU Core</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>32</strong> GB RAM</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>200</strong> GB SSD Storage</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>25 GB</strong> SSD Storage</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>16</strong> TB Bandwidth</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Daily Backup</span>
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Global Data Centers</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Unlimited Free <strong>SSL</strong></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- pricing-area-end -->
+
+        <!-- pricing-area -->
+        <section id="shared" class="pricing__area section-pt-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section__title section__title-two text-center mb-40">
+                            <h2 class="title"><span>Shared Hosting</span> Plans That Fit Your Budget</h2>
+                            <p>Experience ultra-fast loading speeds globally for seamless performance and reliability anywhere in the world.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-tab pricing-tab-two pricing-tab-four">
+                    <span class="tab-btn monthly_tab_title">12 Months</span>
+                    <span class="pricing-tab-switcher"></span>
+                    <span class="tab-btn annual_tab_title">36 Months <strong>(save 30%)</strong></span>
+                </div>
+                <div class="pricing__item-wrap-three">
+                    <div class="row gx-0 justify-content-center">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing__box pricing__box-two pricing__box-six">
+                                <div class="pricing__plan">
+                                    <h4 class="title">Starter Plan</h4>
+                                    <p>Everything you need to your wbsite</p>
+                                </div>
+                                <div class="pricing__price">
+                                    <h2 class="price monthly_price">$4.50 <span>/month</span></h2>
+                                    <h2 class="price annual_price">$45.50 <span>/year</span></h2>
+                                    <p>$ 5.99 when you renew this plan</p>
+                                    <span class="price-off">50% OFF</span>
+                                </div>
+                                <div class="pricing__btn">
+                                    <a href="#!" class="tg-btn tg-border-btn">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.66797 7.5L12.168 10L9.66797 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M3 10C3 10.9849 3.19399 11.9602 3.5709 12.8701C3.94781 13.7801 4.50026 14.6069 5.1967 15.3033C5.89314 15.9997 6.71993 16.5522 7.62987 16.9291C8.53982 17.306 9.51509 17.5 10.5 17.5C11.4849 17.5 12.4602 17.306 13.3701 16.9291C14.2801 16.5522 15.1069 15.9997 15.8033 15.3033C16.4997 14.6069 17.0522 13.7801 17.4291 12.8701C17.806 11.9602 18 10.9849 18 10C18 8.01088 17.2098 6.10322 15.8033 4.6967C14.3968 3.29018 12.4891 2.5 10.5 2.5C8.51088 2.5 6.60322 3.29018 5.1967 4.6967C3.79018 6.10322 3 8.01088 3 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                          </svg>
+                                        Get Started
+                                    </a>
+                                </div>
+                                <div class="pricing__list">
+                                    <ul class="list-wrap">
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to 10 Website</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Stander Performance</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to <strong>30 GB</strong> Data Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>25 GB</strong> SSD Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Free</strong> & Automatic Website Migration</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Daily Backup</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>99.99</strong> Uptime Guarantee</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Unlimited Free <strong>SSL</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>24/7 Dedicated <strong>Support</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Powerful control panel</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Cache manager</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> cronjobs</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> FTP accounts</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pricing__select">
+                                    <span class="more-item">More Features</span>
+                                    <span class="less-item">Less Features</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing__box pricing__box-two pricing__box-six">
+                                <div class="pricing__plan">
+                                    <h4 class="title">Business Plan <span class="tg-badge">Popular</span></h4>
+                                    <p>Everything you need to your wbsite</p>
+                                </div>
+                                <div class="pricing__price">
+                                    <h2 class="price monthly_price">$9.50 <span>/month</span></h2>
+                                    <h2 class="price annual_price">$90.50 <span>/year</span></h2>
+                                    <p>$ 5.99 when you renew this plan</p>
+                                    <span class="price-off">70% OFF</span>
+                                </div>
+                                <div class="pricing__btn">
+                                    <a href="#!" class="tg-btn tg-border-btn active">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.66797 7.5L12.168 10L9.66797 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M3 10C3 10.9849 3.19399 11.9602 3.5709 12.8701C3.94781 13.7801 4.50026 14.6069 5.1967 15.3033C5.89314 15.9997 6.71993 16.5522 7.62987 16.9291C8.53982 17.306 9.51509 17.5 10.5 17.5C11.4849 17.5 12.4602 17.306 13.3701 16.9291C14.2801 16.5522 15.1069 15.9997 15.8033 15.3033C16.4997 14.6069 17.0522 13.7801 17.4291 12.8701C17.806 11.9602 18 10.9849 18 10C18 8.01088 17.2098 6.10322 15.8033 4.6967C14.3968 3.29018 12.4891 2.5 10.5 2.5C8.51088 2.5 6.60322 3.29018 5.1967 4.6967C3.79018 6.10322 3 8.01088 3 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                          </svg>
+                                        Get Started
+                                    </a>
+                                </div>
+                                <div class="pricing__list">
+                                    <ul class="list-wrap">
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to 10 Website</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Stander Performance</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to <strong>30 GB</strong> Data Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>25 GB</strong> SSD Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Free</strong> & Automatic Website Migration</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Daily Backup</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>99.99</strong> Uptime Guarantee</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Unlimited Free <strong>SSL</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>24/7 Dedicated <strong>Support</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Powerful control panel</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Cache manager</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> cronjobs</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> FTP accounts</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pricing__select">
+                                    <span class="more-item">More Features</span>
+                                    <span class="less-item">Less Features</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing__box pricing__box-two pricing__box-six">
+                                <div class="pricing__plan">
+                                    <h4 class="title">Enterprise Plan</h4>
+                                    <p>Everything you need to your wbsite</p>
+                                </div>
+                                <div class="pricing__price">
+                                    <h2 class="price monthly_price">$20.50 <span>/month</span></h2>
+                                    <h2 class="price annual_price">$200.50 <span>/year</span></h2>
+                                    <p>$ 5.99 when you renew this plan</p>
+                                    <span class="price-off">50% OFF</span>
+                                </div>
+                                <div class="pricing__btn">
+                                    <a href="#!" class="tg-btn tg-border-btn">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.66797 7.5L12.168 10L9.66797 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M3 10C3 10.9849 3.19399 11.9602 3.5709 12.8701C3.94781 13.7801 4.50026 14.6069 5.1967 15.3033C5.89314 15.9997 6.71993 16.5522 7.62987 16.9291C8.53982 17.306 9.51509 17.5 10.5 17.5C11.4849 17.5 12.4602 17.306 13.3701 16.9291C14.2801 16.5522 15.1069 15.9997 15.8033 15.3033C16.4997 14.6069 17.0522 13.7801 17.4291 12.8701C17.806 11.9602 18 10.9849 18 10C18 8.01088 17.2098 6.10322 15.8033 4.6967C14.3968 3.29018 12.4891 2.5 10.5 2.5C8.51088 2.5 6.60322 3.29018 5.1967 4.6967C3.79018 6.10322 3 8.01088 3 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                          </svg>
+                                        Get Started
+                                    </a>
+                                </div>
+                                <div class="pricing__list">
+                                    <ul class="list-wrap">
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to 10 Website</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Stander Performance</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Up to <strong>30 GB</strong> Data Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>25 GB</strong> SSD Storage</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Free</strong> & Automatic Website Migration</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Daily Backup</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>99.99</strong> Uptime Guarantee</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Unlimited Free <strong>SSL</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>24/7 Dedicated <strong>Support</strong></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Powerful control panel</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span>Cache manager</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> cronjobs</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                  </svg>
+                                            </div>
+                                            <div class="content">
+                                                <span><strong>Unlimited</strong> FTP accounts</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pricing__select">
+                                    <span class="more-item">More Features</span>
+                                    <span class="less-item">Less Features</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- pricing-area-end -->
+
+        <!-- pricing-area -->
+        <section id="dedicated" class="pricing__area section-py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section__title section__title-two text-center mb-40">
+                            <h2 class="title"><span>Dedicated Hosting</span> Plans That Fit Your Budget</h2>
+                            <p>Experience ultra-fast loading speeds globally for seamless performance and reliability anywhere in the world.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-tab pricing-tab-two pricing-tab-four">
+                    <span class="tab-btn monthly_tab_title">12 Months</span>
+                    <span class="pricing-tab-switcher"></span>
+                    <span class="tab-btn annual_tab_title">36 Months <strong>(save 30%)</strong></span>
+                </div>
+                <div class="pricing__item-wrap-two pricing__item-wrap-four">
+                    <div class="row gutter-y-30 justify-content-center">
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="pricing__box-four pricing__box-five pricing__box-seven">
+                                <div class="pricing__box-top">
+                                    <div class="pricing__plan">
+                                        <h4 class="title">Starter <span class="price-off">50% OFF</span></h4>
+                                        <p>Everything you need to your wbsite</p>
+                                    </div>
+                                    <div class="pricing__price">
+                                        <h2 class="price monthly_price">$4.50 <span>/month</span></h2>
+                                        <h2 class="price annual_price">$45.50 <span>/month</span></h2>
+                                        <p>Will Charge $5.99 when you renew this plan</p>
+                                    </div>
+                                    <div class="pricing__btn">
+                                        <a href="#!" class="tg-btn">
+                                            Get Started
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.66797 10H16.3346" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13 13.3333L16.3333 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13 6.66663L16.3333 9.99996" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="pricing__box-bottom">
+                                    <div class="pricing__list">
+                                        <ul class="list-wrap">
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>1</strong> vCPU Core</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>4</strong> GB RAM</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>25</strong> GB SSD Storage</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>25 GB</strong> SSD Storage</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>2</strong> TB Bandwidth</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Daily Backup</span>
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Global Data Centers</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Unlimited Free <strong>SSL</strong></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="pricing__box-four pricing__box-five pricing__box-seven">
+                                <div class="pricing__box-top">
+                                    <div class="pricing__plan">
+                                        <h4 class="title">Business <span class="price-off">70% OFF</span></h4>
+                                        <p>Everything you need to your wbsite</p>
+                                    </div>
+                                    <div class="pricing__price">
+                                        <h2 class="price monthly_price">$9.50 <span>/month</span></h2>
+                                        <h2 class="price annual_price">$90.50 <span>/month</span></h2>
+                                        <p>Will Charge $5.99 when you renew this plan</p>
+                                    </div>
+                                    <div class="pricing__btn">
+                                        <a href="#!" class="tg-btn">
+                                            Get Started
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.66797 10H16.3346" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13 13.3333L16.3333 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13 6.66663L16.3333 9.99996" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="pricing__box-bottom">
+                                    <div class="pricing__list">
+                                        <ul class="list-wrap">
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>2</strong> vCPU Core</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>8</strong> GB RAM</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>80</strong> GB SSD Storage</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>25 GB</strong> SSD Storage</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>4</strong> TB Bandwidth</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Daily Backup</span>
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Global Data Centers</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Unlimited Free <strong>SSL</strong></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="pricing__box-four pricing__box-five pricing__box-seven">
+                                <div class="pricing__box-top">
+                                    <div class="pricing__plan">
+                                        <h4 class="title">Professional <span class="price-off active">Popular</span></h4>
+                                        <p>Everything you need to your wbsite</p>
+                                    </div>
+                                    <div class="pricing__price">
+                                        <h2 class="price monthly_price">$13.50 <span>/month</span></h2>
+                                        <h2 class="price annual_price">$130.50 <span>/month</span></h2>
+                                        <p>Will Charge $5.99 when you renew this plan</p>
+                                    </div>
+                                    <div class="pricing__btn">
+                                        <a href="#!" class="tg-btn">
+                                            Get Started
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.66797 10H16.3346" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13 13.3333L16.3333 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13 6.66663L16.3333 9.99996" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="pricing__box-bottom">
+                                    <div class="pricing__list">
+                                        <ul class="list-wrap">
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>4</strong> vCPU Core</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>16</strong> GB RAM</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>120</strong> GB SSD Storage</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>25 GB</strong> SSD Storage</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>8</strong> TB Bandwidth</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Daily Backup</span>
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Global Data Centers</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Unlimited Free <strong>SSL</strong></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="pricing__box-four pricing__box-five pricing__box-seven">
+                                <div class="pricing__box-top">
+                                    <div class="pricing__plan">
+                                        <h4 class="title">Enterprise <span class="price-off">50% OFF</span></h4>
+                                        <p>Everything you need to your wbsite</p>
+                                    </div>
+                                    <div class="pricing__price">
+                                        <h2 class="price monthly_price">$19.50 <span>/month</span></h2>
+                                        <h2 class="price annual_price">$190.50 <span>/month</span></h2>
+                                        <p>Will Charge $5.99 when you renew this plan</p>
+                                    </div>
+                                    <div class="pricing__btn">
+                                        <a href="#!" class="tg-btn">
+                                            Get Started
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.66797 10H16.3346" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13 13.3333L16.3333 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13 6.66663L16.3333 9.99996" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="pricing__box-bottom">
+                                    <div class="pricing__list">
+                                        <ul class="list-wrap">
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>8</strong> vCPU Core</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>32</strong> GB RAM</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>200</strong> GB SSD Storage</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>25 GB</strong> SSD Storage</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span><strong>16</strong> TB Bandwidth</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Daily Backup</span>
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M8 6H8.00833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M7.33203 8H7.9987V10.6667H8.66536" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Global Data Centers</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.16797 6.00016L5.33464 10.1668L13.668 1.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                      </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <span>Unlimited Free <strong>SSL</strong></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- pricing-area-end -->
+
+        <!-- features-area -->
+        <section class="features__area-seven">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section__title white-title text-center mb-60">
+                            <h2 class="title">Maximize Your Domain’s Potential with Key Features</h2>
+                            <p>Experience ultra-fast loading speeds globally for seamless performance and reliability anywhere in the world.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="features__inner-wrap-three">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="features__item-thirteen">
+                                <div class="features__icon-three">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M34.8051 17.5896C34.3615 14.8652 33.1748 12.316 31.3756 10.2227C29.5764 8.12936 27.2344 6.57308 24.6076 5.7252C21.9808 4.87731 19.1709 4.77069 16.4874 5.41709C13.8038 6.06348 11.3507 7.43781 9.39802 9.38878C7.44535 11.3397 6.06888 13.7917 5.42015 16.4747C4.77142 19.1576 4.87559 21.9676 5.72119 24.5952C6.56679 27.2227 8.12102 29.566 10.2128 31.3671C12.3045 33.1681 14.8527 34.357 17.5767 34.803" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6 15H34" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6 25H17.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M19.1684 5C16.8688 8.68455 15.447 12.8485 15.0129 17.17C14.5789 21.4916 15.1442 25.855 16.6651 29.9233" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M20.832 5C23.2213 8.82908 24.6613 13.1735 25.032 17.6717" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M23.332 30.0007C23.332 31.7688 24.0344 33.4645 25.2847 34.7147C26.5349 35.9649 28.2306 36.6673 29.9987 36.6673C31.7668 36.6673 33.4625 35.9649 34.7127 34.7147C35.963 33.4645 36.6654 31.7688 36.6654 30.0007C36.6654 28.2325 35.963 26.5368 34.7127 25.2866C33.4625 24.0364 31.7668 23.334 29.9987 23.334C28.2306 23.334 26.5349 24.0364 25.2847 25.2866C24.0344 26.5368 23.332 28.2325 23.332 30.0007Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M30 27.5V30L30.8333 30.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="features__content-nine">
+                                    <h4 class="title">Free WHOIS Protection</h4>
+                                    <p>Hide your personal contact information from public databases for added privacy and security.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="features__item-thirteen">
+                                <div class="features__icon-three">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M27.925 3.33398H12.075C10.1436 3.33398 9.17785 3.33398 8.39898 3.605C6.92203 4.11891 5.76247 5.31263 5.26326 6.83309C5 7.6349 5 8.62907 5 10.6174V33.9576C5 35.388 6.64166 36.147 7.68016 35.1967C8.29029 34.6384 9.20971 34.6384 9.81984 35.1967L10.625 35.9334C11.6943 36.9119 13.3057 36.9119 14.375 35.9334C15.4443 34.9549 17.0557 34.9549 18.125 35.9334C19.1943 36.9119 20.8057 36.9119 21.875 35.9334C22.9443 34.9549 24.5557 34.9549 25.625 35.9334C26.6943 36.9119 28.3057 36.9119 29.375 35.9334L30.1802 35.1967C30.7903 34.6384 31.7097 34.6384 32.3198 35.1967C33.3583 36.147 35 35.388 35 33.9576V10.6174C35 8.62907 35 7.6349 34.7367 6.83309C34.2375 5.31263 33.078 4.11891 31.601 3.605C30.8222 3.33398 29.8564 3.33398 27.925 3.33398Z" stroke="currentColor" stroke-width="2" />
+                                        <path d="M15.8359 17.334L18.2169 20.0007L24.1693 13.334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12.5 25.834H27.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                      </svg>
+                                </div>
+                                <div class="features__content-nine">
+                                    <h4 class="title">Auto-Renewal</h4>
+                                    <p>Automatically renew your domain to avoid expiration and potential loss of ownership.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="features__item-thirteen">
+                                <div class="features__icon-three">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M30.0026 10.1699C32.1695 10.3831 33.628 10.8648 34.7166 11.9534C36.6693 13.906 36.6693 17.0487 36.6693 23.3341C36.6693 29.6195 36.6693 32.7622 34.7166 34.7148C32.764 36.6674 29.6213 36.6674 23.3359 36.6674H16.6693C10.3839 36.6674 7.24118 36.6674 5.28856 34.7148C3.33594 32.7622 3.33594 29.6195 3.33594 23.3341C3.33594 17.0487 3.33594 13.906 5.28856 11.9534C6.3772 10.8648 7.83575 10.3831 10.0026 10.1699" stroke="currentColor" stroke-width="2" />
+                                        <path d="M16.6641 10H23.3307" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                        <path d="M18.3359 15H21.6693" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                        <path d="M13.5982 19.6658L11.4393 17.8667C10.7315 17.2769 10.3776 16.982 10.1888 16.5789C10 16.1757 10 15.7151 10 14.7938V11.6673C10 7.73895 10 5.77476 11.2204 4.55437C12.4408 3.33398 14.405 3.33398 18.3333 3.33398H21.6667C25.595 3.33398 27.5592 3.33398 28.7796 4.55437C30 5.77476 30 7.73895 30 11.6673V14.7938C30 15.7151 30 16.1757 29.8112 16.5789C29.6224 16.982 29.2685 17.2769 28.5607 17.8667L26.4018 19.6658C23.3408 22.2167 21.8102 23.4921 20 23.4921C18.1898 23.4921 16.6592 22.2167 13.5982 19.6658Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                        <path d="M10 16.666L13.5982 19.6645C16.6592 22.2154 18.1898 23.4908 20 23.4908C21.8102 23.4908 23.3408 22.2154 26.4018 19.6645L30 16.666" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="features__content-nine">
+                                    <h4 class="title">Email Forwarding</h4>
+                                    <p>Create professional email aliases (e.g., info@yourdomain.com) and forward them to your inbox.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="features__item-thirteen">
+                                <div class="features__icon-three">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.66797 10C6.66797 12.7617 12.638 15 20.0013 15C27.3646 15 33.3346 12.7617 33.3346 10C33.3346 7.23833 27.3646 5 20.0013 5C12.638 5 6.66797 7.23833 6.66797 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.66797 10V20C6.66797 22.7617 12.638 25 20.0013 25C21.428 25 22.8013 24.9167 24.0913 24.76M33.3346 20V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.66797 20V30C6.66797 32.7617 12.638 35 20.0013 35C20.2863 35 20.5696 34.9967 20.8513 34.99" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M31.668 36.666V26.666" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M36.668 31.666L31.668 26.666L26.668 31.666" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="features__content-nine">
+                                    <h4 class="title">DNS Management</h4>
+                                    <p>Full control over DNS records to connect your domain with websites, emails, and other services.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="features__item-thirteen">
+                                <div class="features__icon-three">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.6575 6.75673L24.9885 7.50002L25.6575 6.75673ZM32.2555 12.6949L31.5865 13.4382L32.2555 12.6949ZM36.0926 16.9241L35.1791 17.331V17.331L36.0926 16.9241ZM5.28856 34.7147L5.99567 34.0076H5.99567L5.28856 34.7147ZM34.7166 34.7147L34.0095 34.0076L34.7166 34.7147ZM23.3359 36.6673V35.6673H16.6693V36.6673V37.6673H23.3359V36.6673ZM3.33594 23.334H4.33594V16.6673H3.33594H2.33594V23.334H3.33594ZM36.6693 22.6055H35.6693V23.334H36.6693H37.6693V22.6055H36.6693ZM25.6575 6.75673L24.9885 7.50002L31.5865 13.4382L32.2555 12.6949L32.9244 11.9516L26.3265 6.01343L25.6575 6.75673ZM36.6693 22.6055H37.6693C37.6693 19.7695 37.6895 18.0517 37.0061 16.5173L36.0926 16.9241L35.1791 17.331C35.6491 18.3863 35.6693 19.5928 35.6693 22.6055H36.6693ZM32.2555 12.6949L31.5865 13.4382C33.8258 15.4536 34.7091 16.2757 35.1791 17.331L36.0926 16.9241L37.0061 16.5173C36.3228 14.9829 35.0324 13.8488 32.9244 11.9516L32.2555 12.6949ZM16.7189 3.33398V4.33398C19.3363 4.33398 20.3864 4.34942 21.3264 4.71014L21.6846 3.77651L22.0429 2.84289C20.6765 2.31855 19.1849 2.33398 16.7189 2.33398V3.33398ZM25.6575 6.75673L26.3265 6.01343C24.5025 4.37188 23.4092 3.36719 22.0429 2.84289L21.6846 3.77651L21.3264 4.71014C22.2665 5.0709 23.053 5.758 24.9885 7.50002L25.6575 6.75673ZM16.6693 36.6673V35.6673C13.4983 35.6673 11.2207 35.6652 9.48737 35.4322C7.78284 35.203 6.75521 34.7671 5.99567 34.0076L5.28856 34.7147L4.58145 35.4218C5.77453 36.6149 7.29456 37.1553 9.22088 37.4143C11.1184 37.6694 13.5548 37.6673 16.6693 37.6673V36.6673ZM3.33594 23.334H2.33594C2.33594 26.4484 2.33381 28.8848 2.58893 30.7824C2.84792 32.7087 3.38837 34.2287 4.58145 35.4218L5.28856 34.7147L5.99567 34.0076C5.23612 33.248 4.80027 32.2204 4.5711 30.5159C4.33806 28.7826 4.33594 26.505 4.33594 23.334H3.33594ZM23.3359 36.6673V37.6673C26.4504 37.6673 28.8868 37.6694 30.7843 37.4143C32.7106 37.1553 34.2307 36.6149 35.4238 35.4218L34.7166 34.7147L34.0095 34.0076C33.25 34.7671 32.2224 35.203 30.5178 35.4322C28.7845 35.6652 26.5069 35.6673 23.3359 35.6673V36.6673ZM36.6693 23.334H35.6693C35.6693 26.505 35.6671 28.7826 35.4341 30.5159C35.2049 32.2204 34.7691 33.248 34.0095 34.0076L34.7166 34.7147L35.4238 35.4218C36.6168 34.2287 37.1573 32.7087 37.4163 30.7824C37.6714 28.8848 37.6693 26.4484 37.6693 23.334H36.6693ZM3.33594 16.6673H4.33594C4.33594 13.4964 4.33806 11.2187 4.5711 9.48542C4.80027 7.78088 5.23612 6.75325 5.99567 5.99371L5.28856 5.28661L4.58145 4.5795C3.38837 5.77258 2.84792 7.29261 2.58893 9.21892C2.33381 11.1165 2.33594 13.5529 2.33594 16.6673H3.33594ZM16.7189 3.33398V2.33398C13.5879 2.33398 11.1394 2.33188 9.23388 2.5869C7.30041 2.84567 5.77531 3.38564 4.58145 4.5795L5.28856 5.28661L5.99567 5.99371C6.75443 5.23495 7.78527 4.79861 9.49919 4.56922C11.2411 4.33609 13.5315 4.33398 16.7189 4.33398V3.33398Z" fill="currentColor" />
+                                        <path d="M21.6641 4.16602V8.33268C21.6641 12.2611 21.6641 14.2252 22.8845 15.4456C24.1048 16.666 26.069 16.666 29.9974 16.666H36.6641" stroke="currentColor" stroke-width="2" />
+                                        <path d="M10 26L13.6667 30L21 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="features__content-nine">
+                                    <h4 class="title">Bulk Domain Registration</h4>
+                                    <p>Register and manage multiple domain names at once—ideal for businesses or resellers.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="features__item-thirteen">
+                                <div class="features__icon-three">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="19.1693" cy="19.1673" r="15.8333" stroke="currentColor" stroke-width="2" />
+                                        <path d="M30.8359 30.834L36.6693 36.6673" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                        <path d="M15 19.1667H19.1667M19.1667 19.1667H23.3333M19.1667 19.1667V23.3333M19.1667 19.1667V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="features__content-nine">
+                                    <h4 class="title">Domain Name Search Tool</h4>
+                                    <p>Easily check availability and find the perfect domain with smart suggestions and extensions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="features__item-thirteen">
+                                <div class="features__icon-three">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.1019 34.7433C14.084 33.1879 9.87964 29.7206 7.39723 25.0908C4.91482 20.4609 4.35373 15.0402 5.8352 10C11.0278 10.2376 16.1088 8.44429 20.0019 5C23.8949 8.44429 28.976 10.2376 34.1685 10C35.2997 13.8485 35.2474 17.9482 34.0185 21.7667" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M25 31.6673L28.3333 35.0007L35 28.334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="features__content-nine">
+                                    <h4 class="title">Domain Locking</h4>
+                                    <p>Prevent unauthorized transfers or changes to your domain by locking it from external access.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="features__item-thirteen">
+                                <div class="features__icon-three">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M36.6693 20.0007C36.6693 22.1893 36.2382 24.3566 35.4006 26.3787C34.563 28.4008 33.3354 30.2381 31.7877 31.7858C30.2401 33.3334 28.4028 34.5611 26.3807 35.3986C24.3586 36.2362 22.1913 36.6673 20.0026 36.6673C17.8139 36.6673 15.6466 36.2362 13.6245 35.3986C11.6025 34.5611 9.76513 33.3334 8.21749 31.7858C6.66985 30.2381 5.44219 28.4008 4.60461 26.3787C3.76703 24.3566 3.33594 22.1893 3.33594 20.0006C3.33594 17.812 3.76703 15.6447 4.60461 13.6226C5.44219 11.6005 6.66985 9.76318 8.21749 8.21554C9.76514 6.66789 11.6025 5.44024 13.6245 4.60266C15.6466 3.76508 17.8139 3.33398 20.0026 3.33398C22.1913 3.33398 24.3586 3.76508 26.3807 4.60266C28.4028 5.44024 30.2401 6.6679 31.7877 8.21554C33.3354 9.76318 34.563 11.6005 35.4006 13.6226C36.2382 15.6447 36.6693 17.812 36.6693 20.0007L36.6693 20.0007Z" stroke="currentColor" stroke-width="2" />
+                                        <path d="M26.6693 20.0007C26.6693 22.1893 26.4968 24.3566 26.1618 26.3787C25.8268 28.4008 25.3357 30.2381 24.7166 31.7858C24.0976 33.3334 23.3627 34.5611 22.5538 35.3986C21.745 36.2362 20.8781 36.6673 20.0026 36.6673C19.1271 36.6673 18.2602 36.2362 17.4514 35.3986C16.6425 34.5611 15.9076 33.3334 15.2886 31.7858C14.6695 30.2381 14.1784 28.4008 13.8434 26.3787C13.5084 24.3566 13.3359 22.1893 13.3359 20.0006C13.3359 17.812 13.5084 15.6447 13.8434 13.6226C14.1784 11.6005 14.6695 9.76318 15.2886 8.21554C15.9076 6.66789 16.6425 5.44024 17.4514 4.60266C18.2602 3.76508 19.1271 3.33398 20.0026 3.33398C20.8781 3.33398 21.745 3.76508 22.5538 4.60266C23.3627 5.44024 24.0976 6.6679 24.7166 8.21554C25.3357 9.76318 25.8268 11.6005 26.1618 13.6226C26.4968 15.6447 26.6693 17.812 26.6693 20.0007L26.6693 20.0007Z" stroke="currentColor" stroke-width="2" />
+                                        <path d="M3.33594 20H36.6693" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="features__content-nine">
+                                    <h4 class="title">Wide Range of TLDs</h4>
+                                    <p>Choose from popular (.com, .net, .org) and niche or country-specific extensions (.tech, .store, .in, etc.)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shape">
+                <img src="assets/img/images/features_shape.svg" alt="">
+            </div>
+        </section>
+        <!-- features-area-end -->
+
+        <!-- success-area -->
+        <section class="success__area section-py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section__title text-center mb-45">
+                            <h2 class="title">Kickstart your Online Success Today.</h2>
+                            <p>Experience ultra-fast loading speeds globally for seamless performance and reliability anywhere in the world.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gutter-y-24">
+                    <div class="col-lg-12">
+                        <div class="success__item has-animation">
+                            <div class="row align-items-end">
+                                <div class="col-lg-6">
+                                    <div class="success__content">
+                                        <svg class="shape" width="158" height="24" viewBox="0 0 158 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M69.7142 0.0317909C69.4741 0.0498856 68.6882 0.107126 67.9677 0.158902C53.4981 1.19988 34.1707 5.85317 21.0452 11.4561C9.81998 16.2478 -0.151768 22.0278 0.00174959 23.6538C0.036767 24.0241 0.388425 24.03 1.50042 23.679C2.49951 23.3636 2.43332 23.3196 1.31241 23.5539C0.196222 23.7872 0.154568 23.7417 0.85841 23.0576C3.79498 20.2033 18.3601 13.2228 28.3442 9.8847C44.6053 4.44797 60.6901 1.44434 73.7749 1.40098C78.7808 1.38441 80.0623 1.60549 80.0623 2.48568C80.0623 3.6793 75.0054 7.01195 71.7227 7.98181C61.7857 10.9175 48.8795 15.9927 47.4536 17.5254C46.9788 18.0358 47.2131 18.7167 47.8636 18.7167C49.1436 18.7167 59.1241 14.9004 67.2255 11.3132C70.0471 10.0639 70.4362 9.94553 78.5777 7.86168C90.9303 4.70004 97.3086 3.65879 105.299 3.49943C108.587 3.43395 108.916 3.50606 108.442 4.18855C107.487 5.56411 100.384 9.0906 88.1399 14.2674C85.9769 15.1819 85.4413 15.8101 86.1793 16.5671L86.4457 16.8403L87.38 16.7934C88.0872 16.7579 88.8848 16.6139 90.6589 16.2015C96.6864 14.8001 108.106 12.4839 113.639 11.5406C123.048 9.93639 133.353 8.81649 147.914 7.81564C150.085 7.66649 151.792 7.49818 152.979 7.31651C153.963 7.16584 155.496 6.97191 156.384 6.88565L158 6.7287L156.908 6.6634C156.308 6.62748 155.031 6.48917 154.07 6.35606C149.741 5.75616 142.692 6.14072 127.262 7.8186C117.316 8.90007 105.433 10.9882 94.6183 13.5546C93.9069 13.7235 93.2585 13.8603 93.1775 13.8586C93.0964 13.8569 93.9732 13.4408 95.1259 12.9338C108.252 7.16037 111.235 5.14542 109.991 2.89146C109.489 1.98368 108.637 1.7721 105.474 1.77058C97.8514 1.76682 89.901 3.033 79.0626 5.97688C77.4871 6.40479 77.4915 6.40694 78.5001 5.69838C82.2859 3.03846 82.1052 0.939927 78.0256 0.187026C77.3427 0.0610802 70.9178 -0.0590409 69.7142 0.0317909Z"/>
+                                        </svg>
+                                        <h2 class="title">Blazing-Fast Loading Website, Speeds Worldwide.</h2>
+                                        <p>Experience ultra-fast loading speeds globally for seamless performance</p>
+                                        <ul class="list-wrap success__list">
+                                            <li>
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10C17.5 9.01509 17.306 8.03982 16.9291 7.12987C16.5522 6.21993 15.9997 5.39314 15.3033 4.6967C14.6069 4.00026 13.7801 3.44781 12.8701 3.0709C11.9602 2.69399 10.9849 2.5 10 2.5C9.01509 2.5 8.03982 2.69399 7.12987 3.0709C6.21993 3.44781 5.39314 4.00026 4.6967 4.6967C4.00026 5.39314 3.44781 6.21993 3.0709 7.12987C2.69399 8.03982 2.5 9.01509 2.5 10Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.5 9.99967L9.16667 11.6663L12.5 8.33301" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <p><span>Optimized Servers:</span> High-performance infrastructure for minimal latency.</p>
+                                            </li>
+                                            <li>
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10C17.5 9.01509 17.306 8.03982 16.9291 7.12987C16.5522 6.21993 15.9997 5.39314 15.3033 4.6967C14.6069 4.00026 13.7801 3.44781 12.8701 3.0709C11.9602 2.69399 10.9849 2.5 10 2.5C9.01509 2.5 8.03982 2.69399 7.12987 3.0709C6.21993 3.44781 5.39314 4.00026 4.6967 4.6967C4.00026 5.39314 3.44781 6.21993 3.0709 7.12987C2.69399 8.03982 2.5 9.01509 2.5 10Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.5 9.99967L9.16667 11.6663L12.5 8.33301" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <p><span>Advanced Caching:</span> Reduces load times with smart caching technology.</p>
+                                            </li>
+                                            <li>
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10C17.5 9.01509 17.306 8.03982 16.9291 7.12987C16.5522 6.21993 15.9997 5.39314 15.3033 4.6967C14.6069 4.00026 13.7801 3.44781 12.8701 3.0709C11.9602 2.69399 10.9849 2.5 10 2.5C9.01509 2.5 8.03982 2.69399 7.12987 3.0709C6.21993 3.44781 5.39314 4.00026 4.6967 4.6967C4.00026 5.39314 3.44781 6.21993 3.0709 7.12987C2.69399 8.03982 2.5 9.01509 2.5 10Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.5 9.99967L9.16667 11.6663L12.5 8.33301" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <p><span>SSD Storage:</span> Faster data retrieval compared to traditional HDDs.</p>
+                                            </li>
+                                            <li>
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10C17.5 9.01509 17.306 8.03982 16.9291 7.12987C16.5522 6.21993 15.9997 5.39314 15.3033 4.6967C14.6069 4.00026 13.7801 3.44781 12.8701 3.0709C11.9602 2.69399 10.9849 2.5 10 2.5C9.01509 2.5 8.03982 2.69399 7.12987 3.0709C6.21993 3.44781 5.39314 4.00026 4.6967 4.6967C4.00026 5.39314 3.44781 6.21993 3.0709 7.12987C2.69399 8.03982 2.5 9.01509 2.5 10Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.5 9.99967L9.16667 11.6663L12.5 8.33301" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <p><span>24/7 Monitoring:</span> Ensures optimal server performance and uptime.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="success__img">
+                                        <img src="assets/img/images/success_img01.jpg" alt="img" data-aos="fade-left" data-aos-delay="200">
+                                        <img src="assets/img/images/success-shape01.svg" alt="shape" data-parallax='{"x" : 50 }'>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="success__item-two">
+                            <div class="success__content-two">
+                                <h2 class="title">Global CDN Integration</h2>
+                                <p>Ensures fast content delivery across all regions.</p>
+                            </div>
+                            <div class="success__img-two">
+                                <img src="assets/img/images/success_img02.jpg" alt="img" data-aos="fade-up" data-aos-delay="200">
+                                <img src="assets/img/images/success-shape02.svg" alt="shape" data-parallax='{"y" : 50 }'>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="success__item-three has-animation">
+                            <div class="success__content-three">
+                                <svg class="shape" width="158" height="24" viewBox="0 0 158 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M69.7142 0.0317909C69.4741 0.0498856 68.6882 0.107126 67.9677 0.158902C53.4981 1.19988 34.1707 5.85317 21.0452 11.4561C9.81998 16.2478 -0.151768 22.0278 0.00174959 23.6538C0.036767 24.0241 0.388425 24.03 1.50042 23.679C2.49951 23.3636 2.43332 23.3196 1.31241 23.5539C0.196222 23.7872 0.154568 23.7417 0.85841 23.0576C3.79498 20.2033 18.3601 13.2228 28.3442 9.8847C44.6053 4.44797 60.6901 1.44434 73.7749 1.40098C78.7808 1.38441 80.0623 1.60549 80.0623 2.48568C80.0623 3.6793 75.0054 7.01195 71.7227 7.98181C61.7857 10.9175 48.8795 15.9927 47.4536 17.5254C46.9788 18.0358 47.2131 18.7167 47.8636 18.7167C49.1436 18.7167 59.1241 14.9004 67.2255 11.3132C70.0471 10.0639 70.4362 9.94553 78.5777 7.86168C90.9303 4.70004 97.3086 3.65879 105.299 3.49943C108.587 3.43395 108.916 3.50606 108.442 4.18855C107.487 5.56411 100.384 9.0906 88.1399 14.2674C85.9769 15.1819 85.4413 15.8101 86.1793 16.5671L86.4457 16.8403L87.38 16.7934C88.0872 16.7579 88.8848 16.6139 90.6589 16.2015C96.6864 14.8001 108.106 12.4839 113.639 11.5406C123.048 9.93639 133.353 8.81649 147.914 7.81564C150.085 7.66649 151.792 7.49818 152.979 7.31651C153.963 7.16584 155.496 6.97191 156.384 6.88565L158 6.7287L156.908 6.6634C156.308 6.62748 155.031 6.48917 154.07 6.35606C149.741 5.75616 142.692 6.14072 127.262 7.8186C117.316 8.90007 105.433 10.9882 94.6183 13.5546C93.9069 13.7235 93.2585 13.8603 93.1775 13.8586C93.0964 13.8569 93.9732 13.4408 95.1259 12.9338C108.252 7.16037 111.235 5.14542 109.991 2.89146C109.489 1.98368 108.637 1.7721 105.474 1.77058C97.8514 1.76682 89.901 3.033 79.0626 5.97688C77.4871 6.40479 77.4915 6.40694 78.5001 5.69838C82.2859 3.03846 82.1052 0.939927 78.0256 0.187026C77.3427 0.0610802 70.9178 -0.0590409 69.7142 0.0317909Z"/>
+                                </svg>
+                                <h2 class="title">Choose a <span>Hosting plan</span> that best matches your business need</h2>
+                                <p>Consider factors like website traffic, storage, security, and scalability. Here are some common options</p>
+                            </div>
+                            <div class="success__img-three">
+                                <img src="assets/img/images/success_img03.jpg" alt="img" data-aos="fade-left" data-aos-delay="200">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- success-area-end -->
+
+        <!-- features-area -->
+        <section class="features__area-three section-pb-120">
+            <div class="container">
+                <div class="features__item-wrap">
+                    <div class="row gutter-y-24">
+                        <div class="col-md-6">
+                            <div class="features__item-five">
+                                <div class="features__content-five">
+                                    <h3 class="title">Effortless Managed WordPress Hosting</h3>
+                                    <p>Get fast, secure, and hassle-free WordPress hosting with automatic updates, daily backups, and expert support.</p>
+                                    <a href="hosting.html" class="tg-btn tg-border-btn-two">See Pricing
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.25 6.75L10.5 9L8.25 11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.25 9C2.25 9.88642 2.42459 10.7642 2.76381 11.5831C3.10303 12.4021 3.60023 13.1462 4.22703 13.773C4.85382 14.3998 5.59794 14.897 6.41689 15.2362C7.23583 15.5754 8.11358 15.75 9 15.75C9.88642 15.75 10.7642 15.5754 11.5831 15.2362C12.4021 14.897 13.1462 14.3998 13.773 13.773C14.3998 13.1462 14.897 12.4021 15.2362 11.5831C15.5754 10.7642 15.75 9.88642 15.75 9C15.75 7.20979 15.0388 5.4929 13.773 4.22703C12.5071 2.96116 10.7902 2.25 9 2.25C7.20979 2.25 5.4929 2.96116 4.22703 4.22703C2.96116 5.4929 2.25 7.20979 2.25 9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="features__shape-three">
+                                    <img src="assets/img/images/features_shape_icon01.svg" alt="shape">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="features__item-five features__item-six">
+                                <div class="features__content-five">
+                                    <h3 class="title">Powerful & Scalable Cloud Hosting</h3>
+                                    <p>Get fast, secure, and hassle-free WordPress hosting with automatic updates, daily backups, and expert support.</p>
+                                    <a href="hosting.html" class="tg-btn tg-border-btn-two">See Pricing
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.25 6.75L10.5 9L8.25 11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.25 9C2.25 9.88642 2.42459 10.7642 2.76381 11.5831C3.10303 12.4021 3.60023 13.1462 4.22703 13.773C4.85382 14.3998 5.59794 14.897 6.41689 15.2362C7.23583 15.5754 8.11358 15.75 9 15.75C9.88642 15.75 10.7642 15.5754 11.5831 15.2362C12.4021 14.897 13.1462 14.3998 13.773 13.773C14.3998 13.1462 14.897 12.4021 15.2362 11.5831C15.5754 10.7642 15.75 9.88642 15.75 9C15.75 7.20979 15.0388 5.4929 13.773 4.22703C12.5071 2.96116 10.7902 2.25 9 2.25C7.20979 2.25 5.4929 2.96116 4.22703 4.22703C2.96116 5.4929 2.25 7.20979 2.25 9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="features__shape-three">
+                                    <img src="assets/img/images/features_shape_icon02.svg" alt="shape">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="features__item-seven">
+                                <div class="features__content-five features__content-six">
+                                    <h2 class="title">Award-Winning Supports by an Outstanding Team</h2>
+                                    <p>Get fast, secure, and hassle-free WordPress hosting with automatic updates, daily <br> backups, and expert support.</p>
+                                    <a href="hosting.html" class="tg-btn">Contact Us
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.25 6.75L10.5 9L8.25 11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.25 9C2.25 9.88642 2.42459 10.7642 2.76381 11.5831C3.10303 12.4021 3.60023 13.1462 4.22703 13.773C4.85382 14.3998 5.59794 14.897 6.41689 15.2362C7.23583 15.5754 8.11358 15.75 9 15.75C9.88642 15.75 10.7642 15.5754 11.5831 15.2362C12.4021 14.897 13.1462 14.3998 13.773 13.773C14.3998 13.1462 14.897 12.4021 15.2362 11.5831C15.5754 10.7642 15.75 9.88642 15.75 9C15.75 7.20979 15.0388 5.4929 13.773 4.22703C12.5071 2.96116 10.7902 2.25 9 2.25C7.20979 2.25 5.4929 2.96116 4.22703 4.22703C2.96116 5.4929 2.25 7.20979 2.25 9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="features__thumb-four">
+                                    <img src="assets/img/images/features_img04.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- features-area-end -->
+
+        <!-- faq-area -->
+        <section class="faq__area-two">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="faq__inner-wrap-two">
+                            <div class="section__title text-center mb-60">
+                                <h2 class="title">Help Center – Hosting FAQs</h2>
+                                <p>Switch to a better host today! Migrate your website effortlessly with our expert support. Get started now!</p>
+                            </div>
+                            <div class="faq__wrap faq__wrap-two">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item active">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                          <span>1.</span> What is domain hosting
+                                        </button>
+                                      </h2>
+                                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>I'm here to help if you're searching for a product designer to bring your idea to life or a design partner to help take your business to the next level.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <span>2.</span> Can I transfer my existing domain to your hosting service?
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>I'm here to help if you're searching for a product designer to bring your idea to life or a design partner to help take your business to the next level.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <span>3.</span> Do you offer email hosting with domain hosting?
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>I'm here to help if you're searching for a product designer to bring your idea to life or a design partner to help take your business to the next level.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            <span>4.</span> Is technical support available if I need help?
+                                        </button>
+                                      </h2>
+                                      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>I'm here to help if you're searching for a product designer to bring your idea to life or a design partner to help take your business to the next level.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            <span>5.</span> How secure is my domain with your service?
+                                        </button>
+                                      </h2>
+                                      <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                          <p>I'm here to help if you're searching for a product designer to bring your idea to life or a design partner to help take your business to the next level.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq__bottom-content">
+                                <p>Didn’t find your Desiree answer? please feel free to
+                                    <a href="contact.html" class="tg-link-btn">
+                                        <span class="link-effect">
+                                            <span class="effect-1">Contact us</span>
+                                            <span class="effect-1">Contact us</span>
+                                        </span>
+                                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.75 5.75L5.25 13.25" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M6 5.75H12.75V12.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- faq-area-end -->
+
+        <!-- brand-area -->
+        <div class="brand__area-two section-pt-120">
+            <div class="container">
+                <div class="brand__title">Trusted By Top Brands Worldwide</div>
+                <div class="brand__item-wrap">
+                    <div class="swiper-container brand-active fix">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="brand__item">
+                                    <img src="assets/img/brand/brand_img01.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand__item">
+                                    <img src="assets/img/brand/brand_img02.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand__item">
+                                    <img src="assets/img/brand/brand_img03.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand__item">
+                                    <img src="assets/img/brand/brand_img04.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand__item">
+                                    <img src="assets/img/brand/brand_img05.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand__item">
+                                    <img src="assets/img/brand/brand_img06.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand__item">
+                                    <img src="assets/img/brand/brand_img03.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- brand-area-end -->
+
+    </main>
+@endsection
+
+@section('script')
+
+@endsection

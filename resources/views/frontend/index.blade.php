@@ -1,0 +1,1376 @@
+@extends('layouts.frontend.master')
+
+@section('meta')
+
+@endsection
+
+@section('css')
+
+@endsection
+
+@section('content')
+    <main class="main-area fix">
+
+        <!-- banner-area -->
+        <section class="banner__area-two">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-lg-6 order-0 order-lg-2">
+                        <div class="banner__img-wrap-two">
+                            <img src="{{ asset('FrontendAssets/img/banner/h2_hero_img.png')}}" alt="img">
+                            <img src="{{ asset('FrontendAssets/img/banner/h2_hero_shape01.svg')}}" alt="shape" data-aos="fade-up" data-aos-delay="200">
+                            <img src="{{ asset('FrontendAssets/img/banner/h2_hero_shape02.svg')}}" alt="shape" data-aos="fade-left" data-aos-delay="200">
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="banner__content-two">
+                            <h2 class="title">The only <span>Hosting</span> Platform you will ever need.</h2>
+                            <p>Discover unique domains, secure hosting, and professional email services all in one place.</p>
+                            <ul class="list-wrap">
+                                <li>
+                                    <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 6.5L6 11.5L16 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    Free Website Migration & SSL Certificate
+                                </li>
+                                <li>
+                                    <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 6.5L6 11.5L16 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    Free Domain Registration
+                                </li>
+                            </ul>
+                            <div class="banner__btn">
+                                <a href="hosting.html" class="tg-btn tg-btn-two">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 9.5L14 12.5L11 15.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M3 12.5C3 13.6819 3.23279 14.8522 3.68508 15.9442C4.13738 17.0361 4.80031 18.0282 5.63604 18.864C6.47177 19.6997 7.46392 20.3626 8.55585 20.8149C9.64778 21.2672 10.8181 21.5 12 21.5C13.1819 21.5 14.3522 21.2672 15.4442 20.8149C16.5361 20.3626 17.5282 19.6997 18.364 18.864C19.1997 18.0282 19.8626 17.0361 20.3149 15.9442C20.7672 14.8522 21 13.6819 21 12.5C21 10.1131 20.0518 7.82387 18.364 6.13604C16.6761 4.44821 14.3869 3.5 12 3.5C9.61305 3.5 7.32387 4.44821 5.63604 6.13604C3.94821 7.82387 3 10.1131 3 12.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    Get Started
+                                </a>
+                                <span class="price">Start with <strong>$2.99</strong>/mo</span>
+                            </div>
+                            <div class="banner__review banner__review-two">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>Rated <span>4.5</span> out of 5 from <span>16K+</span> customer reviews.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner-area-end -->
+
+        <!-- hosting-area -->
+        <section class="hosting__area-two section-py-120 ">
+            <div class="container">
+                <div class="hosting__item-wrap-two">
+                    <div class="row gutter-y-24">
+                        <div class="col-xl-6 col-lg-8">
+                            <div class="hosting__content-wrap">
+                                <div class="section__title mb-15">
+                                    <span class="sub-title">Affordable Hosting</span>
+                                    <h2 class="title">Tailored hosting solutions for every business need</h2>
+                                </div>
+                                <p>Experience ultra-fast loading speeds globally for seamless performance and reliability anywhere in the world.</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="hosting__item-two">
+                                <div class="hosting__item-top">
+                                    <div class="hosting__icon hosting__icon-two">
+                                        <img src="{{ asset('FrontendAssets/img/icon/hosting_icon01.svg')}}" alt="icon">
+                                    </div>
+                                    <div class="hosting__content-top">
+                                        <h4 class="title">Web Hosting</h4>
+                                        <span>Best for Small Business</span>
+                                    </div>
+                                </div>
+                                <div class="hosting__content-two">
+                                    <p>Web hosting providers deliver fast, secure, and reliable hosting solutions for websites, email, and online businesses.</p>
+                                </div>
+                                <div class="hosting__btn-two">
+                                    <a href="hosting.html">
+                                        <svg class="left-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.16797 7.5L11.668 10L9.16797 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10C17.5 8.01088 16.7098 6.10322 15.3033 4.6967C13.8968 3.29018 11.9891 2.5 10 2.5C8.01088 2.5 6.10322 3.29018 4.6967 4.6967C3.29018 6.10322 2.5 8.01088 2.5 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="text">See Pricing</span>
+                                        <svg class="right-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.16797 7.5L11.668 10L9.16797 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10C17.5 8.01088 16.7098 6.10322 15.3033 4.6967C13.8968 3.29018 11.9891 2.5 10 2.5C8.01088 2.5 6.10322 3.29018 4.6967 4.6967C3.29018 6.10322 2.5 8.01088 2.5 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <span class="hosting__badge">Recommended</span>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="hosting__item-two">
+                                <div class="hosting__item-top">
+                                    <div class="hosting__icon hosting__icon-two">
+                                        <img src="{{ asset('FrontendAssets/img/icon/hosting_icon02.svg')}}" alt="icon">
+                                    </div>
+                                    <div class="hosting__content-top">
+                                        <h4 class="title">WordPress Hosting</h4>
+                                        <span>Best for Newbies or Starter</span>
+                                    </div>
+                                </div>
+                                <div class="hosting__content-two">
+                                    <p>WordPress hosting providers offer optimized, secure, and high-performance hosting solutions for seamless website management and growth.</p>
+                                </div>
+                                <div class="hosting__btn-two">
+                                    <a href="hosting.html">
+                                        <svg class="left-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.16797 7.5L11.668 10L9.16797 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10C17.5 8.01088 16.7098 6.10322 15.3033 4.6967C13.8968 3.29018 11.9891 2.5 10 2.5C8.01088 2.5 6.10322 3.29018 4.6967 4.6967C3.29018 6.10322 2.5 8.01088 2.5 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="text">See Pricing</span>
+                                        <svg class="right-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.16797 7.5L11.668 10L9.16797 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10C17.5 8.01088 16.7098 6.10322 15.3033 4.6967C13.8968 3.29018 11.9891 2.5 10 2.5C8.01088 2.5 6.10322 3.29018 4.6967 4.6967C3.29018 6.10322 2.5 8.01088 2.5 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="hosting__item-two">
+                                <div class="hosting__item-top">
+                                    <div class="hosting__icon hosting__icon-two">
+                                        <img src="{{ asset('FrontendAssets/img/icon/hosting_icon03.svg')}}" alt="icon">
+                                    </div>
+                                    <div class="hosting__content-top">
+                                        <h4 class="title">Cloud Hosting</h4>
+                                        <span>Best for Startup</span>
+                                    </div>
+                                </div>
+                                <div class="hosting__content-two">
+                                    <p>Web hosting providers deliver fast, secure, and reliable hosting solutions for websites, email, and online businesses.</p>
+                                </div>
+                                <div class="hosting__btn-two">
+                                    <a href="hosting.html">
+                                        <svg class="left-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.16797 7.5L11.668 10L9.16797 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10C17.5 8.01088 16.7098 6.10322 15.3033 4.6967C13.8968 3.29018 11.9891 2.5 10 2.5C8.01088 2.5 6.10322 3.29018 4.6967 4.6967C3.29018 6.10322 2.5 8.01088 2.5 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="text">See Pricing</span>
+                                        <svg class="right-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.16797 7.5L11.668 10L9.16797 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10C17.5 8.01088 16.7098 6.10322 15.3033 4.6967C13.8968 3.29018 11.9891 2.5 10 2.5C8.01088 2.5 6.10322 3.29018 4.6967 4.6967C3.29018 6.10322 2.5 8.01088 2.5 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="hosting__item-two">
+                                <div class="hosting__item-top">
+                                    <div class="hosting__icon hosting__icon-two">
+                                        <img src="{{ asset('FrontendAssets/img/icon/hosting_icon04.svg')}}" alt="icon">
+                                    </div>
+                                    <div class="hosting__content-top">
+                                        <h4 class="title">Shared Hosting</h4>
+                                        <span>Best for Large Business</span>
+                                    </div>
+                                </div>
+                                <div class="hosting__content-two">
+                                    <p>Web hosting providers deliver fast, secure, and reliable hosting solutions for websites, email, and online businesses.</p>
+                                </div>
+                                <div class="hosting__btn-two">
+                                    <a href="hosting.html">
+                                        <svg class="left-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.16797 7.5L11.668 10L9.16797 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10C17.5 8.01088 16.7098 6.10322 15.3033 4.6967C13.8968 3.29018 11.9891 2.5 10 2.5C8.01088 2.5 6.10322 3.29018 4.6967 4.6967C3.29018 6.10322 2.5 8.01088 2.5 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="text">See Pricing</span>
+                                        <svg class="right-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.16797 7.5L11.668 10L9.16797 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10C17.5 8.01088 16.7098 6.10322 15.3033 4.6967C13.8968 3.29018 11.9891 2.5 10 2.5C8.01088 2.5 6.10322 3.29018 4.6967 4.6967C3.29018 6.10322 2.5 8.01088 2.5 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <span class="hosting__badge hosting__badge-two">Most Popular</span>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="hosting__item-two">
+                                <div class="hosting__item-top">
+                                    <div class="hosting__icon hosting__icon-two">
+                                        <img src="{{ asset('FrontendAssets/img/icon/hosting_icon05.svg')}}" alt="icon">
+                                    </div>
+                                    <div class="hosting__content-top">
+                                        <h4 class="title">VPS Hosting</h4>
+                                        <span>Best for Enterprise</span>
+                                    </div>
+                                </div>
+                                <div class="hosting__content-two">
+                                    <p>Web hosting providers deliver fast, secure, and reliable hosting solutions for websites, email, and online businesses.</p>
+                                </div>
+                                <div class="hosting__btn-two">
+                                    <a href="hosting.html">
+                                        <svg class="left-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.16797 7.5L11.668 10L9.16797 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10C17.5 8.01088 16.7098 6.10322 15.3033 4.6967C13.8968 3.29018 11.9891 2.5 10 2.5C8.01088 2.5 6.10322 3.29018 4.6967 4.6967C3.29018 6.10322 2.5 8.01088 2.5 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="text">See Pricing</span>
+                                        <svg class="right-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.16797 7.5L11.668 10L9.16797 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10C17.5 8.01088 16.7098 6.10322 15.3033 4.6967C13.8968 3.29018 11.9891 2.5 10 2.5C8.01088 2.5 6.10322 3.29018 4.6967 4.6967C3.29018 6.10322 2.5 8.01088 2.5 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="hosting__item-two">
+                                <div class="hosting__item-top">
+                                    <div class="hosting__icon hosting__icon-two">
+                                        <img src="{{ asset('FrontendAssets/img/icon/hosting_icon06.svg')}}" alt="icon">
+                                    </div>
+                                    <div class="hosting__content-top">
+                                        <h4 class="title">Dedicated Hosting</h4>
+                                        <span>Best for Small Business</span>
+                                    </div>
+                                </div>
+                                <div class="hosting__content-two">
+                                    <p>Web hosting providers deliver fast, secure, and reliable hosting solutions for websites, email, and online businesses.</p>
+                                </div>
+                                <div class="hosting__btn-two">
+                                    <a href="hosting.html">
+                                        <svg class="left-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.16797 7.5L11.668 10L9.16797 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10C17.5 8.01088 16.7098 6.10322 15.3033 4.6967C13.8968 3.29018 11.9891 2.5 10 2.5C8.01088 2.5 6.10322 3.29018 4.6967 4.6967C3.29018 6.10322 2.5 8.01088 2.5 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="text">See Pricing</span>
+                                        <svg class="right-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.16797 7.5L11.668 10L9.16797 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10C17.5 8.01088 16.7098 6.10322 15.3033 4.6967C13.8968 3.29018 11.9891 2.5 10 2.5C8.01088 2.5 6.10322 3.29018 4.6967 4.6967C3.29018 6.10322 2.5 8.01088 2.5 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- hosting-area-end -->
+
+
+        <!-- features-area -->
+        <section class="features__area-four section-py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section__title text-center mb-60">
+                            <span class="sub-title">Core Selling Point</span>
+                            <h2 class="title">Kickstart your online success today.</h2>
+                            <p>Experience ultra-fast loading speeds globally for seamless performance and reliability anywhere in the world.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gutter-y-24">
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="features__item features__item-eight">
+                            <div class="features__thumb">
+                                <img src="{{ asset('FrontendAssets/img/images/h2_features_img01.png')}}" alt="img">
+                            </div>
+                            <div class="features__content">
+                                <h3 class="title">Pick Up Domains</h3>
+                                <p>Start with the ideal domain, including free lifetime domain privacy protection.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-7">
+                        <div class="features__item-two features__item-nine">
+                            <div class="features__content-two">
+                                <h2 class="title">Choose a <span>Hosting plan</span> that best matches your business need</h2>
+                                <p>Consider factors like website traffic, storage, security, and scalability. Here are some common options</p>
+                                <a href="#" class="tg-link-btn">
+                                    <span class="link-effect">
+                                        <span class="effect-1">View Hosting Plan</span>
+                                        <span class="effect-1">View Hosting Plan</span>
+                                    </span>
+                                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.75 5.75L5.25 13.25" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6 5.75H12.75V12.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="features__thumb-two">
+                                <img src="{{ asset('FrontendAssets/img/images/h2_features_img02.png')}}" alt="img" data-aos="fade-left" data-aos-delay="200">
+                            </div>
+                            <div class="features__shape">
+                                <img src="{{ asset('FrontendAssets/img/images/features_shape01.png')}}" alt="shape">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="features__item-three features__item-ten">
+                            <div class="features__content-three">
+                                <h2 class="title">Blazing-Fast Loading Website, Speeds Worldwide.</h2>
+                                <p>Experience ultra-fast loading speeds globally for seamless performance</p>
+                                <ul class="list-wrap features__list">
+                                    <li>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10C17.5 9.01509 17.306 8.03982 16.9291 7.12987C16.5522 6.21993 15.9997 5.39314 15.3033 4.6967C14.6069 4.00026 13.7801 3.44781 12.8701 3.0709C11.9602 2.69399 10.9849 2.5 10 2.5C9.01509 2.5 8.03982 2.69399 7.12987 3.0709C6.21993 3.44781 5.39314 4.00026 4.6967 4.6967C4.00026 5.39314 3.44781 6.21993 3.0709 7.12987C2.69399 8.03982 2.5 9.01509 2.5 10Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.5 9.99967L9.16667 11.6663L12.5 8.33301" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <p><span>Global CDN Integration:</span> Ensures fast content delivery across all regions.</p>
+                                    </li>
+                                    <li>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10C17.5 9.01509 17.306 8.03982 16.9291 7.12987C16.5522 6.21993 15.9997 5.39314 15.3033 4.6967C14.6069 4.00026 13.7801 3.44781 12.8701 3.0709C11.9602 2.69399 10.9849 2.5 10 2.5C9.01509 2.5 8.03982 2.69399 7.12987 3.0709C6.21993 3.44781 5.39314 4.00026 4.6967 4.6967C4.00026 5.39314 3.44781 6.21993 3.0709 7.12987C2.69399 8.03982 2.5 9.01509 2.5 10Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.5 9.99967L9.16667 11.6663L12.5 8.33301" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <p><span>Advanced Caching:</span> Reduces load times with smart caching technology.</p>
+                                    </li>
+                                    <li>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10C17.5 9.01509 17.306 8.03982 16.9291 7.12987C16.5522 6.21993 15.9997 5.39314 15.3033 4.6967C14.6069 4.00026 13.7801 3.44781 12.8701 3.0709C11.9602 2.69399 10.9849 2.5 10 2.5C9.01509 2.5 8.03982 2.69399 7.12987 3.0709C6.21993 3.44781 5.39314 4.00026 4.6967 4.6967C4.00026 5.39314 3.44781 6.21993 3.0709 7.12987C2.69399 8.03982 2.5 9.01509 2.5 10Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.5 9.99967L9.16667 11.6663L12.5 8.33301" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <p><span>SSD Storage:</span> Faster data retrieval compared to traditional HDDs.</p>
+                                    </li>
+                                    <li>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10C17.5 9.01509 17.306 8.03982 16.9291 7.12987C16.5522 6.21993 15.9997 5.39314 15.3033 4.6967C14.6069 4.00026 13.7801 3.44781 12.8701 3.0709C11.9602 2.69399 10.9849 2.5 10 2.5C9.01509 2.5 8.03982 2.69399 7.12987 3.0709C6.21993 3.44781 5.39314 4.00026 4.6967 4.6967C4.00026 5.39314 3.44781 6.21993 3.0709 7.12987C2.69399 8.03982 2.5 9.01509 2.5 10Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.5 9.99967L9.16667 11.6663L12.5 8.33301" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <p><span>24/7 Monitoring:</span> Ensures optimal server performance and uptime.</p>
+                                    </li>
+                                </ul>
+                                <a href="#" class="tg-link-btn">
+                                    <span class="link-effect">
+                                        <span class="effect-1">View Hosting Plan</span>
+                                        <span class="effect-1">View Hosting Plan</span>
+                                    </span>
+                                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.75 5.75L5.25 13.25" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6 5.75H12.75V12.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="features__thumb-three">
+                                <img src="{{ asset('FrontendAssets/img/images/features_img03.png')}}" alt="img" class="main-img" data-aos="fade-left" data-aos-delay="200">
+                                <img src="{{ asset('FrontendAssets/img/images/h2_features_item_shape01.svg')}}" alt="shape">
+                                <img src="{{ asset('FrontendAssets/img/images/h2_features_item_shape02.svg')}}" alt="shape">
+                            </div>
+                            <div class="features__shape-two">
+                                <img src="{{ asset('FrontendAssets/img/images/features_shape02.png')}}" alt="shape">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- features-area-end -->
+
+        <!-- choose-area -->
+        <section class="choose__area-two has-animation section-pb-120">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-0 order-lg-2">
+                        <div class="choose__img-two">
+                            <img src="{{ asset('FrontendAssets/img/images/h2_choose_img.png')}}" alt="img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="choose__content choose__content-two">
+                            <div class="section__title mb-20">
+                                <span class="sub-title">Why DeveonHost</span>
+                                <h2 class="title">Why You Should Choose DeveonHost
+                                    <svg class="shape" width="158" height="24" viewBox="0 0 158 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M69.7142 0.0317909C69.4741 0.0498856 68.6882 0.107126 67.9677 0.158902C53.4981 1.19988 34.1707 5.85317 21.0452 11.4561C9.81998 16.2478 -0.151768 22.0278 0.00174959 23.6538C0.036767 24.0241 0.388425 24.03 1.50042 23.679C2.49951 23.3636 2.43332 23.3196 1.31241 23.5539C0.196222 23.7872 0.154568 23.7417 0.85841 23.0576C3.79498 20.2033 18.3601 13.2228 28.3442 9.8847C44.6053 4.44797 60.6901 1.44434 73.7749 1.40098C78.7808 1.38441 80.0623 1.60549 80.0623 2.48568C80.0623 3.6793 75.0054 7.01195 71.7227 7.98181C61.7857 10.9175 48.8795 15.9927 47.4536 17.5254C46.9788 18.0358 47.2131 18.7167 47.8636 18.7167C49.1436 18.7167 59.1241 14.9004 67.2255 11.3132C70.0471 10.0639 70.4362 9.94553 78.5777 7.86168C90.9303 4.70004 97.3086 3.65879 105.299 3.49943C108.587 3.43395 108.916 3.50606 108.442 4.18855C107.487 5.56411 100.384 9.0906 88.1399 14.2674C85.9769 15.1819 85.4413 15.8101 86.1793 16.5671L86.4457 16.8403L87.38 16.7934C88.0872 16.7579 88.8848 16.6139 90.6589 16.2015C96.6864 14.8001 108.106 12.4839 113.639 11.5406C123.048 9.93639 133.353 8.81649 147.914 7.81564C150.085 7.66649 151.792 7.49818 152.979 7.31651C153.963 7.16584 155.496 6.97191 156.384 6.88565L158 6.7287L156.908 6.6634C156.308 6.62748 155.031 6.48917 154.07 6.35606C149.741 5.75616 142.692 6.14072 127.262 7.8186C117.316 8.90007 105.433 10.9882 94.6183 13.5546C93.9069 13.7235 93.2585 13.8603 93.1775 13.8586C93.0964 13.8569 93.9732 13.4408 95.1259 12.9338C108.252 7.16037 111.235 5.14542 109.991 2.89146C109.489 1.98368 108.637 1.7721 105.474 1.77058C97.8514 1.76682 89.901 3.033 79.0626 5.97688C77.4871 6.40479 77.4915 6.40694 78.5001 5.69838C82.2859 3.03846 82.1052 0.939927 78.0256 0.187026C77.3427 0.0610802 70.9178 -0.0590409 69.7142 0.0317909Z" fill="currentColor" />
+                                    </svg>
+                                </h2>
+                            </div>
+                            <p>Experience ultra-fast loading speeds globally for seamless performance and reliability anywhere in the world.</p>
+                            <div class="choose__list">
+                                <ul class="list-wrap">
+                                    <li>
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.5 10.5C2.5 11.4849 2.69399 12.4602 3.0709 13.3701C3.44781 14.2801 4.00026 15.1069 4.6967 15.8033C5.39314 16.4997 6.21993 17.0522 7.12987 17.4291C8.03982 17.806 9.01509 18 10 18C10.9849 18 11.9602 17.806 12.8701 17.4291C13.7801 17.0522 14.6069 16.4997 15.3033 15.8033C15.9997 15.1069 16.5522 14.2801 16.9291 13.3701C17.306 12.4602 17.5 11.4849 17.5 10.5C17.5 9.51509 17.306 8.53982 16.9291 7.62987C16.5522 6.71993 15.9997 5.89314 15.3033 5.1967C14.6069 4.50026 13.7801 3.94781 12.8701 3.5709C11.9602 3.19399 10.9849 3 10 3C9.01509 3 8.03982 3.19399 7.12987 3.5709C6.21993 3.94781 5.39314 4.50026 4.6967 5.1967C4.00026 5.89314 3.44781 6.71993 3.0709 7.62987C2.69399 8.53982 2.5 9.51509 2.5 10.5Z" stroke="#767982" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.5 10.4999L9.16667 12.1666L12.5 8.83325" stroke="#404248" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        Site transfers available
+                                    </li>
+                                    <li>
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.5 10.5C2.5 11.4849 2.69399 12.4602 3.0709 13.3701C3.44781 14.2801 4.00026 15.1069 4.6967 15.8033C5.39314 16.4997 6.21993 17.0522 7.12987 17.4291C8.03982 17.806 9.01509 18 10 18C10.9849 18 11.9602 17.806 12.8701 17.4291C13.7801 17.0522 14.6069 16.4997 15.3033 15.8033C15.9997 15.1069 16.5522 14.2801 16.9291 13.3701C17.306 12.4602 17.5 11.4849 17.5 10.5C17.5 9.51509 17.306 8.53982 16.9291 7.62987C16.5522 6.71993 15.9997 5.89314 15.3033 5.1967C14.6069 4.50026 13.7801 3.94781 12.8701 3.5709C11.9602 3.19399 10.9849 3 10 3C9.01509 3 8.03982 3.19399 7.12987 3.5709C6.21993 3.94781 5.39314 4.50026 4.6967 5.1967C4.00026 5.89314 3.44781 6.71993 3.0709 7.62987C2.69399 8.53982 2.5 9.51509 2.5 10.5Z" stroke="#767982" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.5 10.4999L9.16667 12.1666L12.5 8.83325" stroke="#404248" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        Unmetered bandwidth
+                                    </li>
+                                    <li>
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.5 10.5C2.5 11.4849 2.69399 12.4602 3.0709 13.3701C3.44781 14.2801 4.00026 15.1069 4.6967 15.8033C5.39314 16.4997 6.21993 17.0522 7.12987 17.4291C8.03982 17.806 9.01509 18 10 18C10.9849 18 11.9602 17.806 12.8701 17.4291C13.7801 17.0522 14.6069 16.4997 15.3033 15.8033C15.9997 15.1069 16.5522 14.2801 16.9291 13.3701C17.306 12.4602 17.5 11.4849 17.5 10.5C17.5 9.51509 17.306 8.53982 16.9291 7.62987C16.5522 6.71993 15.9997 5.89314 15.3033 5.1967C14.6069 4.50026 13.7801 3.94781 12.8701 3.5709C11.9602 3.19399 10.9849 3 10 3C9.01509 3 8.03982 3.19399 7.12987 3.5709C6.21993 3.94781 5.39314 4.50026 4.6967 5.1967C4.00026 5.89314 3.44781 6.71993 3.0709 7.62987C2.69399 8.53982 2.5 9.51509 2.5 10.5Z" stroke="#767982" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.5 10.4999L9.16667 12.1666L12.5 8.83325" stroke="#404248" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        Advanced Security
+                                    </li>
+                                    <li>
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.5 10.5C2.5 11.4849 2.69399 12.4602 3.0709 13.3701C3.44781 14.2801 4.00026 15.1069 4.6967 15.8033C5.39314 16.4997 6.21993 17.0522 7.12987 17.4291C8.03982 17.806 9.01509 18 10 18C10.9849 18 11.9602 17.806 12.8701 17.4291C13.7801 17.0522 14.6069 16.4997 15.3033 15.8033C15.9997 15.1069 16.5522 14.2801 16.9291 13.3701C17.306 12.4602 17.5 11.4849 17.5 10.5C17.5 9.51509 17.306 8.53982 16.9291 7.62987C16.5522 6.71993 15.9997 5.89314 15.3033 5.1967C14.6069 4.50026 13.7801 3.94781 12.8701 3.5709C11.9602 3.19399 10.9849 3 10 3C9.01509 3 8.03982 3.19399 7.12987 3.5709C6.21993 3.94781 5.39314 4.50026 4.6967 5.1967C4.00026 5.89314 3.44781 6.71993 3.0709 7.62987C2.69399 8.53982 2.5 9.51509 2.5 10.5Z" stroke="#767982" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.5 10.4999L9.16667 12.1666L12.5 8.83325" stroke="#404248" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        Free SSL certificate
+                                    </li>
+                                    <li>
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.5 10.5C2.5 11.4849 2.69399 12.4602 3.0709 13.3701C3.44781 14.2801 4.00026 15.1069 4.6967 15.8033C5.39314 16.4997 6.21993 17.0522 7.12987 17.4291C8.03982 17.806 9.01509 18 10 18C10.9849 18 11.9602 17.806 12.8701 17.4291C13.7801 17.0522 14.6069 16.4997 15.3033 15.8033C15.9997 15.1069 16.5522 14.2801 16.9291 13.3701C17.306 12.4602 17.5 11.4849 17.5 10.5C17.5 9.51509 17.306 8.53982 16.9291 7.62987C16.5522 6.71993 15.9997 5.89314 15.3033 5.1967C14.6069 4.50026 13.7801 3.94781 12.8701 3.5709C11.9602 3.19399 10.9849 3 10 3C9.01509 3 8.03982 3.19399 7.12987 3.5709C6.21993 3.94781 5.39314 4.50026 4.6967 5.1967C4.00026 5.89314 3.44781 6.71993 3.0709 7.62987C2.69399 8.53982 2.5 9.51509 2.5 10.5Z" stroke="#767982" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.5 10.4999L9.16667 12.1666L12.5 8.83325" stroke="#404248" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        24/7 Expert Support
+                                    </li>
+                                    <li>
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.5 10.5C2.5 11.4849 2.69399 12.4602 3.0709 13.3701C3.44781 14.2801 4.00026 15.1069 4.6967 15.8033C5.39314 16.4997 6.21993 17.0522 7.12987 17.4291C8.03982 17.806 9.01509 18 10 18C10.9849 18 11.9602 17.806 12.8701 17.4291C13.7801 17.0522 14.6069 16.4997 15.3033 15.8033C15.9997 15.1069 16.5522 14.2801 16.9291 13.3701C17.306 12.4602 17.5 11.4849 17.5 10.5C17.5 9.51509 17.306 8.53982 16.9291 7.62987C16.5522 6.71993 15.9997 5.89314 15.3033 5.1967C14.6069 4.50026 13.7801 3.94781 12.8701 3.5709C11.9602 3.19399 10.9849 3 10 3C9.01509 3 8.03982 3.19399 7.12987 3.5709C6.21993 3.94781 5.39314 4.50026 4.6967 5.1967C4.00026 5.89314 3.44781 6.71993 3.0709 7.62987C2.69399 8.53982 2.5 9.51509 2.5 10.5Z" stroke="#767982" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.5 10.4999L9.16667 12.1666L12.5 8.83325" stroke="#404248" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        99.98 Uptime
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="counter__wrap-two">
+                            <div class="counter__item-two">
+                                <div class="icon">
+                                    <img src="{{ asset('FrontendAssets/img/icon/counter_icon01.svg')}}" alt="icon">
+                                </div>
+                                <div class="content">
+                                    <h2 class="count"><span class="counter-number">10.5</span>M+</h2>
+                                    <p>Patient Treated</p>
+                                </div>
+                            </div>
+                            <div class="counter__item-two">
+                                <div class="icon">
+                                    <img src="{{ asset('FrontendAssets/img/icon/counter_icon02.svg')}}" alt="icon">
+                                </div>
+                                <div class="content">
+                                    <h2 class="count"><span class="counter-number">1.8</span>Million+</h2>
+                                    <p>websites currently hosted.</p>
+                                </div>
+                            </div>
+                            <div class="counter__item-two">
+                                <div class="icon">
+                                    <img src="{{ asset('FrontendAssets/img/icon/counter_icon03.svg')}}" alt="icon">
+                                </div>
+                                <div class="content">
+                                    <h2 class="count"><span class="counter-number">99.9</span>%</h2>
+                                    <p>Server Uptime</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- choose-area-end -->
+
+        <!-- data-center-area -->
+        <section class="data__center-area section-py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section__title white-title text-center mb-40">
+                            <h2 class="title">Our Data Center Locations</h2>
+                            <p>Start with the ideal hosting.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="data__center-inner-wrap">
+                    <div class="data__center-tab">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="itemOne-tab" data-bs-toggle="tab" data-bs-target="#itemOne-tab-pane" type="button" role="tab" aria-controls="itemOne-tab-pane" aria-selected="true">United States</button>
+                            </li>
+                             <li class="nav-item" role="presentation">
+                              <button class="nav-link " id="itemTwo-tab" data-bs-toggle="tab" data-bs-target="#itemTwo-tab-pane" type="button" role="tab" aria-controls="itemTwo-tab-pane" aria-selected="true">Canada</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="itemThree-tab" data-bs-toggle="tab" data-bs-target="#itemThree-tab-pane" type="button" role="tab" aria-controls="itemThree-tab-pane" aria-selected="false">Europe</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="itemFour-tab" data-bs-toggle="tab" data-bs-target="#itemFour-tab-pane" type="button" role="tab" aria-controls="itemFour-tab-pane" aria-selected="false">Asia</button>
+                            </li>
+                          
+                        </ul>
+                    </div>
+                    <div class="data__center-map-wrap">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="itemOne-tab-pane" role="tabpanel" aria-labelledby="itemOne-tab" tabindex="0">
+                                <div class="data__center-map-item">
+                                    <img src="{{ asset('FrontendAssets/img/images/map.svg')}}" alt="map">
+                                    <ul class="list-wrap">
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Alberta, Canada</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item active">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>New York, USA</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Natal, Brazil</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Ottawa, Canada</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Islamabad, PK</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Berlin, Germany</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Victoria, Australia</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="data__center-price text-center">
+                                        <a href="hosting.html">See Pricing
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.1654 5.83398L5.83203 14.1673" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6.66797 5.83398H14.168V13.334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="itemTwo-tab-pane" role="tabpanel" aria-labelledby="itemTwo-tab" tabindex="0">
+                                <div class="data__center-map-item">
+                                    <img src="{{ asset('FrontendAssets/img/images/map.svg')}}" alt="map">
+                                    <ul class="list-wrap">
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Alberta, Canada</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>New York, USA</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Natal, Brazil</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item active">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Ottawa, Canada</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Islamabad, PK</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Berlin, Germany</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Victoria, Australia</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="data__center-price text-center">
+                                        <a href="hosting.html">See Pricing
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.1654 5.83398L5.83203 14.1673" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6.66797 5.83398H14.168V13.334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="itemThree-tab-pane" role="tabpanel" aria-labelledby="itemThree-tab" tabindex="0">
+                                <div class="data__center-map-item">
+                                    <img src="{{ asset('FrontendAssets/img/images/map.svg')}}" alt="map">
+                                    <ul class="list-wrap">
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Alberta, Canada</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>New York, USA</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Natal, Brazil</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Ottawa, Canada</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Islamabad, PK</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item active">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Berlin, Germany</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Victoria, Australia</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="data__center-price text-center">
+                                        <a href="hosting.html">See Pricing
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.1654 5.83398L5.83203 14.1673" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6.66797 5.83398H14.168V13.334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="itemFour-tab-pane" role="tabpanel" aria-labelledby="itemFour-tab" tabindex="0">
+                                <div class="data__center-map-item">
+                                    <img src="{{ asset('FrontendAssets/img/images/map.svg')}}" alt="map">
+                                    <ul class="list-wrap">
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Alberta, Canada</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>New York, USA</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Natal, Brazil</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Ottawa, Canada</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item active">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Islamabad, PK</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Berlin, Germany</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Victoria, Australia</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="data__center-price text-center">
+                                        <a href="hosting.html">See Pricing
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.1654 5.83398L5.83203 14.1673" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6.66797 5.83398H14.168V13.334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="itemFive-tab-pane" role="tabpanel" aria-labelledby="itemFive-tab" tabindex="0">
+                                <div class="data__center-map-item">
+                                    <img src="{{ asset('FrontendAssets/img/images/map.svg')}}" alt="map">
+                                    <ul class="list-wrap">
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Alberta, Canada</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item active">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>New York, USA</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Natal, Brazil</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Ottawa, Canada</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Islamabad, PK</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Berlin, Germany</span>
+                                            </div>
+                                        </li>
+                                        <li class="tooltip-item">
+                                            <div class="tooltip-btn"></div>
+                                            <div class="tooltip-location">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75 8.25C6.75 8.84674 6.98705 9.41903 7.40901 9.84099C7.83097 10.2629 8.40326 10.5 9 10.5C9.59674 10.5 10.169 10.2629 10.591 9.84099C11.0129 9.41903 11.25 8.84674 11.25 8.25C11.25 7.65326 11.0129 7.08097 10.591 6.65901C10.169 6.23705 9.59674 6 9 6C8.40326 6 7.83097 6.23705 7.40901 6.65901C6.98705 7.08097 6.75 7.65326 6.75 8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M13.2428 12.4925L10.0605 15.6748C9.77924 15.9558 9.39794 16.1136 9.00038 16.1136C8.60282 16.1136 8.22151 15.9558 7.94025 15.6748L4.75725 12.4925C3.91817 11.6534 3.34675 10.5843 3.11527 9.42043C2.88378 8.25655 3.00262 7.05017 3.45676 5.95383C3.91089 4.85749 4.67993 3.92044 5.66661 3.26116C6.6533 2.60189 7.81333 2.25 9 2.25C10.1867 2.25 11.3467 2.60189 12.3334 3.26116C13.3201 3.92044 14.0891 4.85749 14.5433 5.95383C14.9974 7.05017 15.1162 8.25655 14.8847 9.42043C14.6533 10.5843 14.0818 11.6534 13.2428 12.4925Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>Victoria, Australia</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="data__center-price text-center">
+                                        <a href="hosting.html">See Pricing
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.1654 5.83398L5.83203 14.1673" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6.66797 5.83398H14.168V13.334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- data-center-area-end -->
+
+        <!-- features-area -->
+        <!-- <section class="features__area-five section-py-120">
+            <div class="container">
+                <div class="features__inner-wrap-five">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section__title text-center mb-60">
+                                <h2 class="title">Seamless website migration with ease.</h2>
+                                <p>Switch to a better host today! Migrate your website effortlessly with our expert support. Get started
+                                    now!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="features__item-four features__item-eleven">
+                                <div class="features__icon features__icon-two">
+                                    <img src="{{ asset('FrontendAssets/img/icon/h2_features_icon01.svg')}}" alt="icon">
+                                </div>
+                                <div class="features__content-four features__content-seven">
+                                    <h2 class="title">Backup & Prepare</h2>
+                                    <p>Secure all files, databases, and settings from your current host.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="features__item-four features__item-eleven">
+                                <div class="features__icon features__icon-two">
+                                    <img src="{{ asset('FrontendAssets/img/icon/h2_features_icon02.svg')}}" alt="icon">
+                                </div>
+                                <div class="features__content-four features__content-seven">
+                                    <h2 class="title">Transfer & Configure</h2>
+                                    <p>Move your website to the new host and adjust necessary settings.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="features__item-four features__item-eleven">
+                                <div class="features__icon features__icon-two">
+                                    <img src="{{ asset('FrontendAssets/img/icon/h2_features_icon03.svg')}}" alt="icon">
+                                </div>
+                                <div class="features__content-four features__content-seven">
+                                    <h2 class="title">Test & Launch</h2>
+                                    <p>Verify functionality, fix issues, and go live smoothly.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-more-btn text-center mt-20">
+                    <a href="hosting.html" class="tg-btn tg-border-btn-three">Get started now</a>
+                </div>
+            </div>
+        </section> -->
+        <!-- features-area-end -->
+
+   
+
+        <!-- support-area -->
+        <section class="support__area section-py-120">
+            <div class="container">
+                <div class="support__inner-wrap">
+                    <div class="row align-item-center">
+                        <div class="col-lg-5 order-0 order-lg-2">
+                            <div class="support__thumb">
+                                <img src="{{ asset('FrontendAssets/img/images/suport_img.png')}}" alt="img" data-aos="fade-left" data-aos-delay="200">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="support__content">
+                                <div class="section__title mb-40">
+                                    <h2 class="title">Award-Winning Supports by an Outstanding Team</h2>
+                                </div>
+                                <div class="support__list-wrap">
+                                    <div class="support__list-item">
+                                        <div class="icon">
+                                            <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.2033 25.2907L21.9329 22.8254C21.1031 22.3463 20.0323 22.6317 19.5535 23.4623L19.385 23.7547C18.9583 24.4948 18.3019 24.9665 17.4651 25.138C16.6316 25.3087 15.8367 25.13 15.1562 24.6195C13.7594 23.5716 12.4399 22.4146 11.2054 21.1801C9.97118 19.9458 8.81418 18.6265 7.76662 17.2299C7.25605 16.5492 7.07674 15.7543 7.24749 14.9205C7.41887 14.0838 7.89162 13.4284 8.6313 13.0015L8.92337 12.833C9.32843 12.5992 9.61199 12.2253 9.73312 11.774C9.85368 11.3247 9.7938 10.8567 9.56112 10.4537L7.09549 6.18328C6.65768 5.42497 5.75424 5.12403 4.94143 5.43597L4.88837 5.45634C4.05062 5.77772 1.74168 6.62109 1.12118 7.24159C-0.713759 9.07659 0.0713659 12.3962 0.889991 14.5087C2.32368 18.2083 5.04324 21.7692 7.83024 24.5558C10.6169 27.3421 14.1776 30.0625 17.8768 31.4961C19.1603 31.9935 20.6046 32.3861 21.9902 32.3861C23.1498 32.3861 24.3041 32.1053 25.1445 31.2649C25.736 30.6734 26.6133 28.2922 26.9348 27.4835L26.9555 27.4315C27.2764 26.6242 26.9533 25.7237 26.2033 25.2907ZM24.8879 8.53859C25.2917 8.68328 25.5609 9.06634 25.5609 9.49503V14.3576H25.7502C26.3109 14.3576 26.7662 14.8129 26.7662 15.3736C26.7662 15.9349 26.3116 16.3896 25.7502 16.3896H25.5609V17.5143C25.5609 18.0757 25.1057 18.53 24.5449 18.53C23.9839 18.53 23.5292 18.0757 23.5292 17.5143V16.3896H19.7069C19.3139 16.3896 18.956 16.1628 18.7882 15.8079C18.6205 15.4523 18.6726 15.0321 18.9221 14.7287L23.7602 8.84916C24.0324 8.51828 24.4841 8.39397 24.8879 8.53859ZM23.5292 14.3577H21.8591L23.5292 12.3283V14.3577ZM16.6433 12.3517C16.8299 11.6678 16.7203 11.1586 16.3156 10.8384C15.8451 10.4664 15.0615 10.4005 14.5313 10.6892C14.1497 10.8971 13.9882 11.2475 14.0371 11.7612C14.0912 12.3198 13.6821 12.8165 13.1235 12.8698C12.5646 12.924 12.0689 12.5142 12.0149 11.9562C11.8864 10.6212 12.4492 9.50872 13.559 8.90428C14.8101 8.22378 16.4624 8.36334 17.5766 9.24547C18.6327 10.0808 19.0072 11.4087 18.6034 12.8868C18.3285 13.8942 17.3771 14.6358 16.371 15.4218C15.9415 15.7567 15.485 16.1128 15.0711 16.4983H18.0232C18.5843 16.4983 19.039 16.9536 19.039 17.5143C19.039 18.0757 18.5843 18.53 18.0232 18.53H13.0028C12.6529 18.53 12.3274 18.3503 12.1417 18.0538C11.9557 17.7575 11.9362 17.3858 12.0887 17.071C12.78 15.6468 14.0779 14.6337 15.1206 13.8199C15.7555 13.324 16.5459 12.7072 16.6433 12.3517ZM32 13.8454C32 17.3796 30.6234 20.702 28.1244 23.2013C27.9257 23.3993 27.6661 23.499 27.4058 23.499C27.1461 23.499 26.8856 23.3993 26.6876 23.2013C26.2907 22.8044 26.2907 22.161 26.6876 21.7642C28.8026 19.6492 29.968 16.8365 29.968 13.8454C29.968 7.66934 24.9439 2.64528 18.7679 2.64528C15.7764 2.64528 12.9641 3.81047 10.8489 5.92547C10.452 6.32234 9.80887 6.32234 9.41199 5.92547C9.01511 5.52859 9.01511 4.88547 9.41199 4.48859C11.9113 1.98991 15.2337 0.613281 18.7679 0.613281C26.0639 0.613344 32 6.54916 32 13.8454Z" fill="currentColor" />
+                                            </svg>
+                                        </div>
+                                        <div class="content">
+                                            <h5 class="title">24/7 Expert Support</h5>
+                                            <p>Get round-the-clock assistance whenever you need it.</p>
+                                        </div>
+                                    </div>
+                                    <div class="support__list-item">
+                                        <div class="icon">
+                                            <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M29.8821 14.691L28.4999 14.0002C28.4999 7.09575 22.903 1.5 16 1.5C9.09625 1.5 3.49975 7.09575 3.49975 14.0002L2.11825 14.691C1.50325 14.9985 1 15.813 1 16.5V19.0001C1 19.6871 1.50325 20.5016 2.11825 20.8091L3.49975 21.4999H5.37475V14.0002C5.37475 8.14087 10.1414 3.375 16 3.375C21.8582 3.375 26.6249 8.14087 26.6249 14.0002V24C26.6249 27.1065 24.1068 29.625 20.9999 29.625H17.2499V27.75H14.7498V31.5H20.9999C25.1418 31.5 28.4999 28.1419 28.4999 24V21.4999L29.8821 20.8091C30.4971 20.5016 31 19.6871 31 19.0001V16.5C31 15.813 30.4971 14.9985 29.8821 14.691Z" fill="currentColor" />
+                                                <path d="M21.1429 10.9545H16.9645V8.37855C17.7228 8.13491 18.25 7.61855 18.25 7.01491C18.25 6.17818 17.2433 5.5 16.0002 5.5C14.757 5.5 13.75 6.17818 13.75 7.01491C13.75 7.61855 14.2772 8.13636 15.0359 8.37855V10.9545H10.8571C8.72799 10.9545 7 12.5833 7 14.5909V19.4393C7 22.7844 9.88088 25.5 13.429 25.5H18.5717C22.1199 25.5 25 22.7844 25 19.4393V14.5909C25 12.5833 23.2724 10.9545 21.1429 10.9545ZM11.5005 17.0153V15.8033C11.5005 15.1327 12.0767 14.5909 12.7857 14.5909C13.4954 14.5909 14.0716 15.1327 14.0716 15.8033V17.0153C14.0716 17.6865 13.4954 18.2273 12.7857 18.2273C12.0767 18.2273 11.5005 17.6865 11.5005 17.0153ZM19.2143 21.8636L16.6432 22.4698H15.3576L12.7857 21.8636V20.6516H19.2143V21.8636ZM20.5003 17.0153C20.5003 17.6865 19.924 18.2273 19.2143 18.2273C18.505 18.2273 17.9288 17.6865 17.9288 17.0153V15.8033C17.9288 15.1327 18.505 14.5909 19.2143 14.5909C19.924 14.5909 20.5003 15.1327 20.5003 15.8033V17.0153Z" fill="currentColor" />
+                                            </svg>
+                                        </div>
+                                        <div class="content">
+                                            <h5 class="title">Instant Chatbot Assistant Support</h5>
+                                            <p>Get round-the-clock assistance whenever you need it.</p>
+                                        </div>
+                                    </div>
+                                    <div class="support__list-item">
+                                        <div class="icon">
+                                            <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 19.5H7.98347C6.89256 19.5 6 20.371 6 21.4355V29.5645C6 30.6398 6.89256 31.5 7.98347 31.5H10V19.5Z" fill="currentColor" />
+                                                <path d="M25.8879 22.4916L23.9619 29.3279C23.6022 30.6083 22.4304 31.5 21.0729 31.5H12V18.7419L15.8287 13.4031C16.2348 12.843 16.8961 12.5 17.6039 12.5C18.8337 12.5 19.7735 13.4946 19.7735 14.6378C19.7735 14.8321 19.7503 15.0265 19.6923 15.2208L18.6829 18.7419H22.9989C24.9829 18.7419 26.4216 20.6053 25.8879 22.4916Z" fill="currentColor" />
+                                                <path d="M5.03674 5.81011L5.96338 7.55225C6.05098 7.71604 6.21879 7.83058 6.41497 7.85693L8.48665 8.1364C8.97773 8.20284 9.17392 8.76293 8.81856 9.08479L7.3194 10.4409C7.17874 10.5692 7.11335 10.7525 7.14666 10.9334L7.50078 12.8485C7.58469 13.3033 7.0714 13.6492 6.6309 13.435L4.77762 12.5313C4.60365 12.4465 4.39512 12.4465 4.21991 12.5313L2.36663 13.435C1.92737 13.6492 1.41284 13.3033 1.49675 12.8485L1.85087 10.9334C1.88418 10.7525 1.82002 10.5692 1.67813 10.4409L0.181437 9.08479C-0.173919 8.76293 0.0222665 8.20284 0.513349 8.1364L2.58503 7.85693C2.77998 7.83058 2.94902 7.71604 3.03662 7.55225L3.96326 5.81011C4.18289 5.39663 4.81711 5.39663 5.03674 5.81011Z" fill="currentColor" />
+                                                <path d="M16.4771 1.81011L17.3008 3.55225C17.3787 3.71604 17.5278 3.83058 17.7022 3.85693L19.5437 4.1364C19.9802 4.20284 20.1546 4.76293 19.8387 5.08479L18.5061 6.44093C18.3811 6.56921 18.323 6.75248 18.3526 6.93345L18.6674 8.84854C18.7419 9.30326 18.2857 9.64917 17.8941 9.43498L16.2468 8.53127C16.0921 8.44651 15.9068 8.44651 15.751 8.53127L14.1037 9.43498C13.7132 9.64917 13.2559 9.30326 13.3304 8.84854L13.6452 6.93345C13.6748 6.75248 13.6178 6.56921 13.4917 6.44093L12.1613 5.08479C11.8454 4.76293 12.0198 4.20284 12.4563 4.1364L14.2978 3.85693C14.4711 3.83058 14.6213 3.71719 14.6992 3.55225L15.5229 1.81011C15.7181 1.39663 16.2819 1.39663 16.4771 1.81011Z" fill="currentColor" />
+                                                <path d="M28.0378 5.81011L28.9642 7.55225C29.0518 7.71604 29.2196 7.83058 29.4157 7.85693L31.4868 8.1364C31.9777 8.20284 32.1739 8.76293 31.8186 9.08479L30.3199 10.4409C30.1792 10.5692 30.1139 10.7525 30.1472 10.9334L30.5012 12.8485C30.5851 13.3033 30.0719 13.6492 29.6316 13.435L27.7788 12.5313C27.6048 12.4465 27.3964 12.4465 27.2212 12.5313L25.3684 13.435C24.9293 13.6492 24.4149 13.3033 24.4988 12.8485L24.8528 10.9334C24.8861 10.7525 24.822 10.5692 24.6801 10.4409L23.1814 9.08479C22.8261 8.76293 23.0223 8.20284 23.5132 8.1364L25.5843 7.85693C25.7792 7.83058 25.9482 7.71719 26.0358 7.55225L26.9622 5.81011C27.1842 5.39663 27.8183 5.39663 28.0378 5.81011Z" fill="currentColor" />
+                                              </svg>
+                                        </div>
+                                        <div class="content">
+                                            <h5 class="title">99% Customer Satisfactions</h5>
+                                            <p>Get round-the-clock assistance whenever you need it.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="tg-link-btn">
+                                    <span class="link-effect">
+                                        <span class="effect-1">Explore Our Support</span>
+                                        <span class="effect-1">Explore Our Support</span>
+                                    </span>
+                                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.75 5.75L5.25 13.25" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6 5.75H12.75V12.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- support-area-end -->
+
+        <!-- faq-area -->
+        <section class="faq__area-two section-pb-120">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="faq__inner-wrap-two">
+                            <div class="section__title text-center mb-60">
+                                <h2 class="title">Help Center – Hosting FAQs</h2>
+                                <p>Switch to a better host today! Migrate your website effortlessly with our expert support. Get started now!</p>
+                            </div>
+                            <div class="faq__wrap faq__wrap-two">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item active">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                          <span>1.</span> What is domain hosting
+                                        </button>
+                                      </h2>
+                                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>I'm here to help if you're searching for a product designer to bring your idea to life or a design partner to help take your business to the next level.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <span>2.</span> Can I transfer my existing domain to your hosting service?
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>I'm here to help if you're searching for a product designer to bring your idea to life or a design partner to help take your business to the next level.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <span>3.</span> Do you offer email hosting with domain hosting?
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>I'm here to help if you're searching for a product designer to bring your idea to life or a design partner to help take your business to the next level.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            <span>4.</span> Is technical support available if I need help?
+                                        </button>
+                                      </h2>
+                                      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>I'm here to help if you're searching for a product designer to bring your idea to life or a design partner to help take your business to the next level.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            <span>5.</span> How secure is my domain with your service?
+                                        </button>
+                                      </h2>
+                                      <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                          <p>I'm here to help if you're searching for a product designer to bring your idea to life or a design partner to help take your business to the next level.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq__bottom-content">
+                                <p>Didn’t find your Desiree answer? please feel free to
+                                    <a href="contact.html" class="tg-link-btn">
+                                        <span class="link-effect">
+                                            <span class="effect-1">Contact us</span>
+                                            <span class="effect-1">Contact us</span>
+                                        </span>
+                                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.75 5.75L5.25 13.25" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M6 5.75H12.75V12.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- faq-area-end -->
+
+        <!-- brand-area -->
+        <div class="brand__area  section-pb-90">
+            <div class="container">
+                 <div class="section__title text-center mb-60">
+                                <h2 class="title">Trusted by Top Companies Worldwide</h2>
+                                <!-- <p>Switch to a better host today! Migrate your website effortlessly with our expert support. Get started now!</p> -->
+                            </div>
+                <div class="brand__item-wrap">
+                    <div class="swiper-container brand-active fix">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="brand__item">
+                                    <img src="{{ asset('FrontendAssets/img/brand/brand_img01.png')}}" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand__item">
+                                    <img src="{{ asset('FrontendAssets/img/brand/brand_img02.png')}}" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand__item">
+                                    <img src="{{ asset('FrontendAssets/img/brand/brand_img03.png')}}" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand__item">
+                                    <img src="{{ asset('FrontendAssets/img/brand/brand_img04.png')}}" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand__item">
+                                    <img src="{{ asset('FrontendAssets/img/brand/brand_img05.png')}}" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand__item">
+                                    <img src="{{ asset('FrontendAssets/img/brand/brand_img06.png')}}" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand__item">
+                                    <img src="{{ asset('FrontendAssets/img/brand/brand_img03.png')}}" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- brand-area-end -->
+
+        <!-- blog-post-area -->
+        <!-- <section class="blog__post-area section-pt-120 section-pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section__title text-center mb-60">
+                            <h2 class="title">Popular Post You May Read</h2>
+                            <p>Are you ready to make your ideas a reality and improve your brand? I'm here to create and cooperate.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog__post-item">
+                            <div class="blog__post-thumb">
+                                <a href="blog-details.html"><img src="{{ asset('FrontendAssets/img/blog/blog_post01.jpg')}}" alt="img"></a>
+                                <a href="blog-details.html" class="blog__post-tag">Technology</a>
+                            </div>
+                            <div class="blog__post-content">
+                                <h2 class="blog__post-title"><a href="blog-details.html">Securing Your Site: SSL, Backups, and More Hosting Essentials</a></h2>
+                                <p>Most-shared stories, first-person perspectives, and Boosted stories from new writers</p>
+                                <div class="blog__post-meta">
+                                    <ul class="list-wrap">
+                                        <li class="blog__post-author">
+                                            <img src="{{ asset('FrontendAssets/img/blog/blog_author01.png')}}" alt="img">
+                                            <a href="blog-details.html">Esther Howard</a>
+                                        </li>
+                                        <li>14 Nov, 2025</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog__post-item">
+                            <div class="blog__post-thumb">
+                                <a href="blog-details.html"><img src="{{ asset('FrontendAssets/img/blog/blog_post02.jpg')}}" alt="img"></a>
+                                <a href="blog-details.html" class="blog__post-tag">Hosting</a>
+                            </div>
+                            <div class="blog__post-content">
+                                <h2 class="blog__post-title"><a href="blog-details.html">Unleashing the Power of Abstract Design in Visual Arts</a></h2>
+                                <p>Most-shared stories, first-person perspectives, and Boosted stories from new writers</p>
+                                <div class="blog__post-meta">
+                                    <ul class="list-wrap">
+                                        <li class="blog__post-author">
+                                            <img src="{{ asset('FrontendAssets/img/blog/blog_author02.png')}}" alt="img">
+                                            <a href="blog-details.html">Jane Cooper</a>
+                                        </li>
+                                        <li>14 Nov, 2025</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog__post-item">
+                            <div class="blog__post-thumb">
+                                <a href="blog-details.html"><img src="{{ asset('FrontendAssets/img/blog/blog_post03.jpg')}}" alt="img"></a>
+                                <a href="blog-details.html" class="blog__post-tag">Domain</a>
+                            </div>
+                            <div class="blog__post-content">
+                                <h2 class="blog__post-title"><a href="blog-details.html">The Ultimate Guide to Choosing a Web Hosting Provider</a></h2>
+                                <p>Most-shared stories, first-person perspectives, and Boosted stories from new writers</p>
+                                <div class="blog__post-meta">
+                                    <ul class="list-wrap">
+                                        <li class="blog__post-author">
+                                            <img src="{{ asset('FrontendAssets/img/blog/blog_author03.png')}}" alt="img">
+                                            <a href="blog-details.html">Annette Black</a>
+                                        </li>
+                                        <li>14 Nov, 2025</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- blog-post-area-end -->
+
+
+
+    </main>
+@endsection
+
+@section('script')
+
+@endsection
