@@ -16,17 +16,9 @@
 
   <!-- endbuild -->
 
-  <!-- Vendors JS -->
-  <script src="{{ asset('AdminAssets/vendor/libs/apex-charts/apexcharts.js')}}"></script>
-  <script src="{{ asset('AdminAssets/vendor/libs/swiper/swiper.js')}}"></script>
-  <script src="{{ asset('AdminAssets/vendor/libs/datatables-bs5/datatables-bootstrap5.js')}}"></script>
-
   <!-- Main JS -->
 
   <script src="{{ asset('AdminAssets/js/main.js')}}"></script>
-
-  <!-- Page JS -->
-  <script src="{{ asset('AdminAssets/js/dashboards-analytics.js')}}"></script>
 
       @yield('script')
     @yield('js')

@@ -1,4 +1,7 @@
    <header>
+    @php
+        $hostingMenuItems = \App\Models\Hosting::orderBy('title')->get();
+    @endphp
         <div id="header-fixed-height"></div>
         <div id="sticky-header" class="tg-header__area tg-header__area-three">
             <div class="container">
@@ -7,95 +10,36 @@
                         <div class="tgmenu__wrap">
                             <nav class="tgmenu__nav">
                                 <div class="logo">
-                                    <a href="index.html"><img src="{{ asset('FrontendAssets/img/logo/logo02.svg')}}" alt="Logo"></a>
+                                    <a href="{{ route('home') }}"><img src="{{ asset('FrontendAssets/img/logo/dark-logo.png')}}" alt="Logo"></a>
                                 </div>
                                 <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
                                     <ul class="navigation">
                                       <li><a href="{{ route('home') }}">Home</a></li>
 
-                                        <li class="active menu-item-has-children tg-mega-menu-has-children"><a href="{{ route('pricing') }}">Hosting</a>
+                                        <li class="menu-item-has-children tg-mega-menu-has-children"><a href="{{ route('pricing') }}">Hosting</a>
                                             <div class="tg-mega-menu-wrap tg-mega-menu-wrap-two">
                                                 <div class="tg-mega-menu-left-side">
                                                     <h5 class="mega-menu-title mega-menu-title-two">RELIABLE HOSTING PLAN</h5>
                                                     <div class="row gutter-y-24">
-                                                        <div class="col-lg-6">
-                                                            <div class="mega-menu-item-two">
-                                                                <a href="{{ route('hosting.web-hosting') }}">
-                                                                    <div class="icon">
-                                                                        <img src="{{ asset('FrontendAssets/img/icon/hosting_icon01.svg')}}" alt="icon">
-                                                                    </div>
-                                                                    <div class="content">
-                                                                        <strong class="title">Web Hosting</strong>
-                                                                        <span>Web hosting providers deliver fast, secure, and reliable hosting solutions</span>
-                                                                    </div>
-                                                                </a>
+                                                        @forelse($hostingMenuItems as $hostingItem)
+                                                            <div class="col-lg-6">
+                                                                <div class="mega-menu-item-two">
+                                                                    <a href="{{ url('/hosting/' . $hostingItem->slug) }}">
+                                                                        <div class="icon">
+                                                                            <img src="{{ asset('storage/' . $hostingItem->icon) }}" alt="{{ $hostingItem->title }} icon">
+                                                                        </div>
+                                                                        <div class="content">
+                                                                            <strong class="title">{{ $hostingItem->title }}</strong>
+                                                                            <span>{{ \Illuminate\Support\Str::limit($hostingItem->description, 95) }}</span>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="col-lg-6">
-                                                            <div class="mega-menu-item-two">
-                                                                <a href="{{ route('hosting.wordpress-hosting') }}">
-                                                                    <div class="icon">
-                                                                        <img src="{{ asset('FrontendAssets/img/icon/hosting_icon02.svg')}}" alt="icon">
-                                                                    </div>
-                                                                    <div class="content">
-                                                                        <strong class="title">WordPress Hosting</strong>
-                                                                        <span>WordPress hosting providers offer optimized, secure & and high-performance hosting</span>
-                                                                    </div>
-                                                                </a>
+                                                        @empty
+                                                            <div class="col-12">
+                                                                <p class="mb-0">No hosting entries available yet.</p>
                                                             </div>
-                                                        </div>
-                                                        <div class="col-lg-6">
-                                                            <div class="mega-menu-item-two">
-                                                                <a href="{{ route('hosting.cloud-hosting') }}">
-                                                                    <div class="icon">
-                                                                        <img src="{{ asset('FrontendAssets/img/icon/hosting_icon03.svg')}}" alt="icon">
-                                                                    </div>
-                                                                    <div class="content">
-                                                                        <strong class="title">Cloud Hosting</strong>
-                                                                        <span>Cloud hosting service providers offer scalable, secure, and high-performance</span>
-                                                                    </div>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6">
-                                                            <div class="mega-menu-item-two">
-                                                                <a href="{{ route('hosting.shared-hosting') }}">
-                                                                    <div class="icon">
-                                                                        <img src="{{ asset('FrontendAssets/img/icon/hosting_icon04.svg')}}" alt="icon">
-                                                                    </div>
-                                                                    <div class="content">
-                                                                        <strong class="title">Shared Hosting</strong>
-                                                                        <span>Shared hosting service providers offer affordable, reliable, and secure hosting</span>
-                                                                    </div>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6">
-                                                            <div class="active mega-menu-item-two">
-                                                                <a href="{{ route('hosting.vps-hosting') }}">
-                                                                    <div class="icon">
-                                                                        <img src="{{ asset('FrontendAssets/img/icon/hosting_icon05.svg')}}" alt="icon">
-                                                                    </div>
-                                                                    <div class="content">
-                                                                        <strong class="title">VPS Hosting</strong>
-                                                                        <span>VPS hosting service providers offer scalable, secure, and high-performance</span>
-                                                                    </div>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6">
-                                                            <div class="mega-menu-item-two">
-                                                                <a href="{{ route('hosting.dedicated-hosting') }}">
-                                                                    <div class="icon">
-                                                                        <img src="{{ asset('FrontendAssets/img/icon/hosting_icon06.svg')}}" alt="icon">
-                                                                    </div>
-                                                                    <div class="content">
-                                                                        <strong class="title">Dedicated Hosting</strong>
-                                                                        <span>Dedicated hosting solutions for websites, applications, and businesses.</span>
-                                                                    </div>
-                                                                </a>
-                                                            </div>
-                                                        </div>
+                                                        @endforelse
                                                     </div>
                                                 </div>
                                                 <div class="tg-mega-menu-right-side">
@@ -143,7 +87,7 @@
                                                 </a>
                                                 <div class="header-dropdown-contact">
                                                     <span class="title">Feel free to contact with us</span>
-                                                    <a href="contact.html">Contact us
+                                                    <a href="{{ route('contact') }}">Contact us
                                                         <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M12.75 5.75L5.25 13.25" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
                                                             <path d="M6 5.75H12.75V12.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -169,16 +113,23 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="header-btn">
-                                            <a href="contact.html" class="tg-btn tg-btn-two">
-                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6 5.33333V4C6 3.64638 6.14048 3.30724 6.39052 3.05719C6.64057 2.80714 6.97971 2.66667 7.33333 2.66667H12C12.3536 2.66667 12.6928 2.80714 12.9428 3.05719C13.1929 3.30724 13.3333 3.64638 13.3333 4V12C13.3333 12.3536 13.1929 12.6928 12.9428 12.9428C12.6928 13.1929 12.3536 13.3333 12 13.3333H7.33333C6.97971 13.3333 6.64057 13.1929 6.39052 12.9428C6.14048 12.6928 6 12.3536 6 12V10.6667" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M2 8H10.6667L8.66667 6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M8.66797 10L10.668 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                                Login
-                                            </a>
-                                        </li>
+                                        @guest
+                                            <li class="header-btn">
+                                                <a href="{{ route('user.login') }}" class="tg-btn tg-btn-two">Login</a>
+                                            </li>
+                                            <li class="header-btn">
+                                                <a href="{{ route('register') }}" class="tg-btn tg-btn-two">Register</a>
+                                            </li>
+                                        @endguest
+
+                                        @auth
+                                            <li class="header-btn">
+                                                <form action="{{ route('logout') }}" method="POST" style="display:inline;">
+                                                    @csrf
+                                                    <button type="submit" class="tg-btn tg-btn-two">Logout</button>
+                                                </form>
+                                            </li>
+                                        @endauth
                                     </ul>
                                 </div>
                                 <div class="mobile-nav-toggler"><i class="tg-flaticon-menu-1"></i></div>
@@ -194,7 +145,7 @@
             <nav class="tgmobile__menu-box">
                 <div class="close-btn"><i class="tg-flaticon-close-1"></i></div>
                 <div class="nav-logo">
-                    <a href="index.html"><img src="{{ asset('FrontendAssets/img/logo/logo.svg')}}" alt="Logo"></a>
+                    <a href="{{ route('home') }}"><img src="{{ asset('FrontendAssets/img/logo/dark-logo.png')}}" alt="Logo"></a>
                 </div>
                 <div class="tgmobile__search">
                     <form action="#">

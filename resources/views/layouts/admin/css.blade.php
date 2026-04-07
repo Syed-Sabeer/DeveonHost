@@ -38,7 +38,4 @@
 
   <script src="{{ asset('AdminAssets/js/config.js')}}"></script>
 
-
-
-
 @yield('css')
