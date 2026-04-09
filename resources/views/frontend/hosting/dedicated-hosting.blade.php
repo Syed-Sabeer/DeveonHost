@@ -10,7 +10,9 @@
 
 @section('content')
 
-
+	<main class="main-area fix">
+		@include('frontend.hosting.partials.dynamic-plans')
+	</main>
 
 @endsection
 

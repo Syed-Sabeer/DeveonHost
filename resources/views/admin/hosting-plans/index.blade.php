@@ -27,6 +27,7 @@
                             <th>Badge</th>
                             <th>Monthly Amount</th>
                             <th>Annual Discount</th>
+                            <th>Status</th>
                             <th>Features</th>
                             <th class="text-end">Actions</th>
                         </tr>
@@ -38,6 +39,16 @@
                                 <td>{{ $plan->badge ?: '-' }}</td>
                                 <td>${{ number_format((float) $plan->amount_per_month, 2) }}</td>
                                 <td>{{ $plan->discount_percentage_annual ? $plan->discount_percentage_annual . '%' : '-' }}</td>
+                                <td>
+                                    <form action="{{ route('admin.hostings.plans.toggle-status', [$hosting, $plan]) }}" method="POST">
+                                        @csrf
+                                        @method('PATCH')
+                                        <div class="form-check form-switch mb-0">
+                                            <input class="form-check-input" type="checkbox" role="switch" {{ $plan->is_active ? 'checked' : '' }} onchange="this.form.submit()">
+                                            <label class="form-check-label">{{ $plan->is_active ? 'Active' : 'Inactive' }}</label>
+                                        </div>
+                                    </form>
+                                </td>
                                 <td>{{ is_array($plan->features) ? count($plan->features) : 0 }}</td>
                                 <td class="text-end">
                                     <a href="{{ route('admin.hostings.plans.edit', [$hosting, $plan]) }}" class="btn btn-sm btn-warning">Edit</a>
@@ -50,7 +61,7 @@
                             </tr>
                         @empty
                             <tr>
-                                <td colspan="6" class="text-center">No plans available.</td>
+                                <td colspan="7" class="text-center">No plans available.</td>
                             </tr>
                         @endforelse
                     </tbody>

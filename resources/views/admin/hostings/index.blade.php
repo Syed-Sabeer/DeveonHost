@@ -21,6 +21,7 @@
                             <th>Title</th>
                             <th>Slug</th>
                             <th>Description</th>
+                            <th>Status</th>
                             <th>Plans</th>
                             <th class="text-end">Actions</th>
                         </tr>
@@ -34,6 +35,16 @@
                                 <td>{{ $hosting->title }}</td>
                                 <td>{{ $hosting->slug }}</td>
                                 <td>{{ \Illuminate\Support\Str::limit($hosting->description, 80) }}</td>
+                                <td>
+                                    <form action="{{ route('admin.hostings.toggle-status', $hosting) }}" method="POST">
+                                        @csrf
+                                        @method('PATCH')
+                                        <div class="form-check form-switch mb-0">
+                                            <input class="form-check-input" type="checkbox" role="switch" {{ $hosting->is_active ? 'checked' : '' }} onchange="this.form.submit()">
+                                            <label class="form-check-label">{{ $hosting->is_active ? 'Active' : 'Inactive' }}</label>
+                                        </div>
+                                    </form>
+                                </td>
                                 <td>
                                     <a href="{{ route('admin.hostings.plans.index', $hosting) }}" class="btn btn-sm btn-outline-primary">
                                         Manage Plans
@@ -50,7 +61,7 @@
                             </tr>
                         @empty
                             <tr>
-                                <td colspan="6" class="text-center">No hostings found.</td>
+                                <td colspan="7" class="text-center">No hostings found.</td>
                             </tr>
                         @endforelse
                     </tbody>

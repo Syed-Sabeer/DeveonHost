@@ -31,7 +31,10 @@ class HostingPlanController extends Controller
             'discount_percentage_annual' => ['nullable', 'numeric', 'min:0', 'max:100'],
             'features' => ['required', 'array', 'min:1'],
             'features.*' => ['required', 'string', 'max:255'],
+            'is_active' => ['nullable', 'boolean'],
         ]);
+
+        $validated['is_active'] = $request->boolean('is_active', true);
 
         $hosting->plans()->create($validated);
 
@@ -57,7 +60,10 @@ class HostingPlanController extends Controller
             'discount_percentage_annual' => ['nullable', 'numeric', 'min:0', 'max:100'],
             'features' => ['required', 'array', 'min:1'],
             'features.*' => ['required', 'string', 'max:255'],
+            'is_active' => ['nullable', 'boolean'],
         ]);
+
+        $validated['is_active'] = $request->boolean('is_active');
 
         $plan->update($validated);
 
@@ -71,5 +77,16 @@ class HostingPlanController extends Controller
         $plan->delete();
 
         return redirect()->route('admin.hostings.plans.index', $hosting)->with('success', 'Hosting plan deleted successfully.');
+    }
+
+    public function toggleStatus(Hosting $hosting, HostingPlan $plan)
+    {
+        abort_if($plan->hosting_id !== $hosting->id, 404);
+
+        $plan->update([
+            'is_active' => ! $plan->is_active,
+        ]);
+
+        return back()->with('success', 'Plan status updated successfully.');
     }
 }

@@ -62,6 +62,7 @@ Route::get('/hosting/vps-hosting', [HostingController::class, 'vpsHosting'])->na
 Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
     Route::resource('hostings', AdminHostingController::class)->except('show');
+    Route::patch('hostings/{hosting}/toggle-status', [AdminHostingController::class, 'toggleStatus'])->name('hostings.toggle-status');
 
     Route::get('hostings/{hosting}/plans', [AdminHostingPlanController::class, 'index'])->name('hostings.plans.index');
     Route::get('hostings/{hosting}/plans/create', [AdminHostingPlanController::class, 'create'])->name('hostings.plans.create');
@@ -69,6 +70,7 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
     Route::get('hostings/{hosting}/plans/{plan}/edit', [AdminHostingPlanController::class, 'edit'])->name('hostings.plans.edit');
     Route::put('hostings/{hosting}/plans/{plan}', [AdminHostingPlanController::class, 'update'])->name('hostings.plans.update');
     Route::delete('hostings/{hosting}/plans/{plan}', [AdminHostingPlanController::class, 'destroy'])->name('hostings.plans.destroy');
+    Route::patch('hostings/{hosting}/plans/{plan}/toggle-status', [AdminHostingPlanController::class, 'toggleStatus'])->name('hostings.plans.toggle-status');
 
     Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 });

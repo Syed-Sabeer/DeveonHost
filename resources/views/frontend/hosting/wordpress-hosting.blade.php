@@ -12,6 +12,8 @@
 
  <main class="main-area fix">
 
+     @include('frontend.hosting.partials.dynamic-plans')
+
         <!-- hosting-area -->
         <section class="hosting__top-area">
             <div class="container">

@@ -43,3 +43,10 @@
         @endforeach
     </div>
 </div>
+
+<div class="mb-4">
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" name="is_active" value="1" role="switch" id="plan-is-active" {{ old('is_active', $plan?->is_active ?? true) ? 'checked' : '' }}>
+        <label class="form-check-label" for="plan-is-active">Active</label>
+    </div>
+</div>

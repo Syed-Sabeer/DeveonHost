@@ -43,6 +43,7 @@ class HostingController extends Controller
             'title' => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
             'slug' => ['required', 'string', 'max:255', 'alpha_dash', 'unique:hostings,slug'],
+            'is_active' => ['nullable', 'boolean'],
         ]);
 
         $icon = $request->file('icon');
@@ -52,6 +53,7 @@ class HostingController extends Controller
         }
 
         $validated['icon'] = $this->storeIconFile($icon);
+        $validated['is_active'] = $request->boolean('is_active', true);
 
         Hosting::create($validated);
 
@@ -70,7 +72,10 @@ class HostingController extends Controller
             'title' => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
             'slug' => ['required', 'string', 'max:255', 'alpha_dash', 'unique:hostings,slug,' . $hosting->id],
+            'is_active' => ['nullable', 'boolean'],
         ]);
+
+        $validated['is_active'] = $request->boolean('is_active');
 
         if ($request->hasFile('icon')) {
             if ($hosting->icon) {
@@ -100,6 +105,15 @@ class HostingController extends Controller
         $hosting->delete();
 
         return redirect()->route('admin.hostings.index')->with('success', 'Hosting deleted successfully.');
+    }
+
+    public function toggleStatus(Hosting $hosting)
+    {
+        $hosting->update([
+            'is_active' => ! $hosting->is_active,
+        ]);
+
+        return back()->with('success', 'Hosting status updated successfully.');
     }
 
     private function storeIconFile($icon): string

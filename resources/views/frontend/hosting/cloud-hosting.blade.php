@@ -12,6 +12,8 @@
 
  <main class="main-area fix">
 
+     @include('frontend.hosting.partials.dynamic-plans')
+
         <!-- hosting-area -->
         <section class="hosting__top-area hosting__top-bg-two" data-background="assets/img/bg/hosting_top_bg02.jpg')}}">
             <div class="container">

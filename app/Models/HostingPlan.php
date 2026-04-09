@@ -18,12 +18,14 @@ class HostingPlan extends Model
         'amount_per_month',
         'discount_percentage_annual',
         'features',
+        'is_active',
     ];
 
     protected $casts = [
         'amount_per_month' => 'decimal:2',
         'discount_percentage_annual' => 'decimal:2',
         'features' => 'array',
+        'is_active' => 'boolean',
     ];
 
     public function hosting(): BelongsTo

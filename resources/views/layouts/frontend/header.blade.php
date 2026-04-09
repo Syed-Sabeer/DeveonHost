@@ -1,6 +1,6 @@
    <header>
     @php
-        $hostingMenuItems = \App\Models\Hosting::orderBy('title')->get();
+            $hostingMenuItems = \App\Models\Hosting::where('is_active', true)->orderBy('title')->get();
     @endphp
         <div id="header-fixed-height"></div>
         <div id="sticky-header" class="tg-header__area tg-header__area-three">

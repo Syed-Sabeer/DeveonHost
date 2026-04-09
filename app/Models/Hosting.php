@@ -15,6 +15,11 @@ class Hosting extends Model
         'title',
         'description',
         'slug',
+        'is_active',
+    ];
+
+    protected $casts = [
+        'is_active' => 'boolean',
     ];
 
     public function plans(): HasMany

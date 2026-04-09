@@ -34,6 +34,12 @@
                     <label class="form-label">Description</label>
                     <textarea name="description" class="form-control" rows="4" required>{{ old('description', $hosting->description) }}</textarea>
                 </div>
+                <div class="mb-4">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" name="is_active" value="1" role="switch" id="hosting-is-active" {{ old('is_active', $hosting->is_active) ? 'checked' : '' }}>
+                        <label class="form-check-label" for="hosting-is-active">Active</label>
+                    </div>
+                </div>
 
                 <button type="submit" class="btn btn-primary">Update Hosting</button>
                 <a href="{{ route('admin.hostings.index') }}" class="btn btn-label-secondary">Cancel</a>
