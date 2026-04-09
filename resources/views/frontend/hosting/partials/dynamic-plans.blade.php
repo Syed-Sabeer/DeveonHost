@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section__title text-center mb-40">
-                    <h2 class="title"><span>{{ $hosting->title }}</span> Plans</h2>
+                    <h2 class="title">Web Hosting Plans That Fit Your Budget</h2>
                     <p>{{ $hosting->description }}</p>
                 </div>
             </div>
@@ -43,6 +43,11 @@
                                 @if($annualDiscount > 0)
                                     <p>${{ number_format($annualDiscountedPrice, 2) }} yearly ({{ number_format($annualDiscount, 0) }}% off)</p>
                                 @endif
+                            </div>
+                            <div class="pricing__btn mb-4">
+                                <a href="{{ route('checkout.show', $plan) }}" class="tg-btn tg-border-btn">
+                                    Get Started
+                                </a>
                             </div>
                             <div class="pricing__list">
                                 <ul class="list-wrap">

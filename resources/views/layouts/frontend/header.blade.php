@@ -124,6 +124,9 @@
 
                                         @auth
                                             <li class="header-btn">
+                                                <a href="{{ route('account.dashboard') }}" class="tg-btn tg-btn-two">My Account</a>
+                                            </li>
+                                            <li class="header-btn">
                                                 <form action="{{ route('logout') }}" method="POST" style="display:inline;">
                                                     @csrf
                                                     <button type="submit" class="tg-btn tg-btn-two">Logout</button>

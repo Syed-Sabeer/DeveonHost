@@ -16,6 +16,9 @@
     <script src="{{ asset('FrontendAssets/js/wow.min.js') }}"></script>
     <script src="{{ asset('FrontendAssets/js/aos.js') }}"></script>
     <script src="{{ asset('FrontendAssets/js/main.js') }}"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   @include('partials.swal-alerts')
 
     @yield('script')
     @yield('js')

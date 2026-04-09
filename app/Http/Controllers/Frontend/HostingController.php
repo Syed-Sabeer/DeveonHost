@@ -8,7 +8,7 @@ use App\Models\Hosting;
 
 class HostingController extends Controller
 {
-    private function renderHostingPage(string $slug, string $view)
+    private function renderHostingPage(string $slug)
     {
         $hosting = Hosting::query()
             ->where('slug', $slug)
@@ -18,7 +18,7 @@ class HostingController extends Controller
             }])
             ->firstOrFail();
 
-        return view($view, [
+        return view('frontend.hosting.detail', [
             'hosting' => $hosting,
             'dynamicPlans' => $hosting->plans,
         ]);
@@ -26,32 +26,32 @@ class HostingController extends Controller
 
 public function webHosting()
 {
-    return $this->renderHostingPage('web-hosting', 'frontend.hosting.web-hosting');
+    return $this->renderHostingPage('web-hosting');
 }
 
 public function wordpressHosting()
 {
-    return $this->renderHostingPage('wordpress-hosting', 'frontend.hosting.wordpress-hosting');
+    return $this->renderHostingPage('wordpress-hosting');
 }
 
 public function cloudHosting()
 {
-    return $this->renderHostingPage('cloud-hosting', 'frontend.hosting.cloud-hosting');
+    return $this->renderHostingPage('cloud-hosting');
 }
 
 public function sharedHosting()
 {
-    return $this->renderHostingPage('shared-hosting', 'frontend.hosting.shared-hosting');
+    return $this->renderHostingPage('shared-hosting');
 }
 
 public function vpsHosting()
 {
-    return $this->renderHostingPage('vps-hosting', 'frontend.hosting.vps-hosting');
+    return $this->renderHostingPage('vps-hosting');
 }
 
 public function dedicatedHosting()
 {
-    return $this->renderHostingPage('dedicated-hosting', 'frontend.hosting.dedicated-hosting');
+    return $this->renderHostingPage('dedicated-hosting');
 }
 
 }

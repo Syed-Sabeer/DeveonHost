@@ -50,5 +50,12 @@
                 </li>
             </ul>
         </li>
+
+        <li class="menu-item {{ request()->routeIs('admin.contact-submissions.*') ? 'active' : '' }}">
+            <a href="{{ route('admin.contact-submissions.index') }}" class="menu-link">
+                <i class="menu-icon icon-base ti tabler-mail"></i>
+                <div>Contact Submissions</div>
+            </a>
+        </li>
     </ul>
 </aside>

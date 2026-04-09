@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-xxl flex-grow-1 container-p-y">
     <div class="row g-6">
-        <div class="col-xl-6 col-sm-6">
+        <div class="col-xl-4 col-sm-6">
             <div class="card">
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
@@ -19,7 +19,7 @@
             </div>
         </div>
 
-        <div class="col-xl-6 col-sm-6">
+        <div class="col-xl-4 col-sm-6">
             <div class="card">
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
@@ -29,6 +29,22 @@
                         </div>
                         <div class="avatar avatar-lg bg-label-success">
                             <i class="icon-base ti tabler-list-details icon-26px"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-1">Contact Submissions</h5>
+                            <h2 class="mb-0">{{ $contactSubmissionCount }}</h2>
+                        </div>
+                        <div class="avatar avatar-lg bg-label-warning">
+                            <i class="icon-base ti tabler-mail icon-26px"></i>
                         </div>
                     </div>
                 </div>

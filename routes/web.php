@@ -4,6 +4,7 @@
 use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Admin\HostingController as AdminHostingController;
 use App\Http\Controllers\Admin\HostingPlanController as AdminHostingPlanController;
+use App\Http\Controllers\Admin\ContactSubmissionController as AdminContactSubmissionController;
 
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Auth\LoginController;
@@ -13,6 +14,8 @@ use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\Frontend\HostingController;
 use App\Http\Controllers\Frontend\PricingController;
+use App\Http\Controllers\Frontend\AccountController;
+use App\Http\Controllers\Frontend\CheckoutController;
 
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
@@ -43,6 +46,7 @@ Route::middleware(['guest'])->group(function () {
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 Route::get('/pricing', [PricingController::class, 'index'])->name('pricing');
 
 
@@ -52,6 +56,21 @@ Route::get('/hosting/cloud-hosting', [HostingController::class, 'cloudHosting'])
 Route::get('/hosting/shared-hosting', [HostingController::class, 'sharedHosting'])->name('hosting.shared-hosting');
 Route::get('/hosting/dedicated-hosting', [HostingController::class, 'dedicatedHosting'])->name('hosting.dedicated-hosting');
 Route::get('/hosting/vps-hosting', [HostingController::class, 'vpsHosting'])->name('hosting.vps-hosting');
+
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/account', [AccountController::class, 'dashboard'])->name('account.dashboard');
+    Route::get('/account/profile', [AccountController::class, 'profile'])->name('account.profile');
+    Route::put('/account/profile', [AccountController::class, 'updateProfile'])->name('account.profile.update');
+    Route::get('/account/security', [AccountController::class, 'security'])->name('account.security');
+    Route::put('/account/security', [AccountController::class, 'updatePassword'])->name('account.security.update');
+    Route::get('/account/orders', [AccountController::class, 'orders'])->name('account.orders');
+
+    Route::get('/checkout/{plan}', [CheckoutController::class, 'show'])->name('checkout.show');
+    Route::post('/checkout/{plan}', [CheckoutController::class, 'process'])->name('checkout.process');
+    Route::get('/checkout/{plan}/success', [CheckoutController::class, 'success'])->name('checkout.success');
+    Route::get('/checkout/{plan}/cancel', [CheckoutController::class, 'cancel'])->name('checkout.cancel');
+});
 
 
 
@@ -71,6 +90,9 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
     Route::put('hostings/{hosting}/plans/{plan}', [AdminHostingPlanController::class, 'update'])->name('hostings.plans.update');
     Route::delete('hostings/{hosting}/plans/{plan}', [AdminHostingPlanController::class, 'destroy'])->name('hostings.plans.destroy');
     Route::patch('hostings/{hosting}/plans/{plan}/toggle-status', [AdminHostingPlanController::class, 'toggleStatus'])->name('hostings.plans.toggle-status');
+
+    Route::get('contact-submissions', [AdminContactSubmissionController::class, 'index'])->name('contact-submissions.index');
+    Route::get('contact-submissions/{contactSubmission}', [AdminContactSubmissionController::class, 'show'])->name('contact-submissions.show');
 
     Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 });

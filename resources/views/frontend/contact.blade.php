@@ -51,7 +51,7 @@
                                             <path d="M3 7L12 13L21 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
                                     </div>
-                                    <a href="mailto:sayhello@DeveonHost.com">sayhello@DeveonHost.com</a>
+                                    <a href="mailto:contacthost@deveoninc.com">contacthost@deveoninc.com</a>
                                 </li>
                                 <li>
                                     <div class="icon">
@@ -85,18 +85,19 @@
                     <div class="col-lg-6">
                         <div class="contact__form-box">
                             <h2 class="title">Contact</h2>
-                            <form  id="contact-form" action="assets/mail.php" class="cantact__form" method="POST">
+                            <form id="contact-form" action="{{ route('contact.store') }}" class="cantact__form" method="POST">
+                                @csrf
                                 <div class="form-grp">
-                                    <input type="text" name="name" placeholder="Name">
+                                    <input type="text" name="name" placeholder="Name" value="{{ old('name') }}" required>
                                 </div>
                                 <div class="form-grp">
-                                    <input type="email" name="email" placeholder="E-mail">
+                                    <input type="email" name="email" placeholder="E-mail" value="{{ old('email') }}" required>
                                 </div>
                                 <div class="form-grp">
-                                    <input type="text" name="subject" placeholder="Subject">
+                                    <input type="text" name="subject" placeholder="Subject" value="{{ old('subject') }}" required>
                                 </div>
                                 <div class="form-grp">
-                                    <textarea name="message" placeholder="Message"></textarea>
+                                    <textarea name="message" placeholder="Message" required>{{ old('message') }}</textarea>
                                 </div>
                                 <button type="submit" class="tg-btn tg-btn-two">
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -130,7 +131,7 @@
                                     <p>Our sales team is ready to discuss your needs and how our AI solutions can help.</p>
                                     <ul class="list-wrap">
                                         <li>
-                                            <a href="mailto:sayhello@DeveonHost.com">
+                                            <a href="mailto:contacthost@deveoninc.com">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path opacity="0.12" d="M11.5266 10.5969C10.9757 10.9825 10.7002 11.1754 10.4005 11.2501C10.1358 11.3161 9.85898 11.3161 9.59428 11.2501C9.29463 11.1754 9.01914 10.9825 8.46816 10.5969L1.66406 5.83398C1.66406 4.45327 2.78335 3.33398 4.16406 3.33398H15.8307C17.2114 3.33398 18.3307 4.45327 18.3307 5.83398L11.5266 10.5969Z" fill="currentColor" />
                                                     <path d="M17.914 15.0007L12.3783 10.0007M7.61644 10.0007L2.08076 15.0007M1.66406 5.83398L8.46816 10.5969C9.01914 10.9825 9.29463 11.1754 9.59428 11.2501C9.85898 11.3161 10.1358 11.3161 10.4005 11.2501C10.7002 11.1754 10.9757 10.9825 11.5266 10.5969L18.3307 5.83398M5.66406 16.6673H14.3307C15.7309 16.6673 16.4309 16.6673 16.9657 16.3948C17.4361 16.1552 17.8186 15.7727 18.0582 15.3023C18.3307 14.7675 18.3307 14.0674 18.3307 12.6673V7.33398C18.3307 5.93385 18.3307 5.23379 18.0582 4.69901C17.8186 4.2286 17.4361 3.84615 16.9657 3.60647C16.4309 3.33398 15.7309 3.33398 14.3307 3.33398H5.66406C4.26393 3.33398 3.56387 3.33398 3.02909 3.60647C2.55868 3.84615 2.17623 4.2286 1.93655 4.69901C1.66406 5.23379 1.66406 5.93385 1.66406 7.33398V12.6673C1.66406 14.0674 1.66406 14.7675 1.93655 15.3023C2.17623 15.7727 2.55868 16.1552 3.02909 16.3948C3.56387 16.6673 4.26393 16.6673 5.66406 16.6673Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -164,7 +165,7 @@
                                     <p>Our Development team is ready to discuss your needs and how our AI solutions can help.</p>
                                     <ul class="list-wrap">
                                         <li>
-                                            <a href="mailto:sayhello@DeveonHost.com">
+                                            <a href="mailto:contacthost@deveoninc.com">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path opacity="0.12" d="M11.5266 10.5969C10.9757 10.9825 10.7002 11.1754 10.4005 11.2501C10.1358 11.3161 9.85898 11.3161 9.59428 11.2501C9.29463 11.1754 9.01914 10.9825 8.46816 10.5969L1.66406 5.83398C1.66406 4.45327 2.78335 3.33398 4.16406 3.33398H15.8307C17.2114 3.33398 18.3307 4.45327 18.3307 5.83398L11.5266 10.5969Z" fill="currentColor" />
                                                     <path d="M17.914 15.0007L12.3783 10.0007M7.61644 10.0007L2.08076 15.0007M1.66406 5.83398L8.46816 10.5969C9.01914 10.9825 9.29463 11.1754 9.59428 11.2501C9.85898 11.3161 10.1358 11.3161 10.4005 11.2501C10.7002 11.1754 10.9757 10.9825 11.5266 10.5969L18.3307 5.83398M5.66406 16.6673H14.3307C15.7309 16.6673 16.4309 16.6673 16.9657 16.3948C17.4361 16.1552 17.8186 15.7727 18.0582 15.3023C18.3307 14.7675 18.3307 14.0674 18.3307 12.6673V7.33398C18.3307 5.93385 18.3307 5.23379 18.0582 4.69901C17.8186 4.2286 17.4361 3.84615 16.9657 3.60647C16.4309 3.33398 15.7309 3.33398 14.3307 3.33398H5.66406C4.26393 3.33398 3.56387 3.33398 3.02909 3.60647C2.55868 3.84615 2.17623 4.2286 1.93655 4.69901C1.66406 5.23379 1.66406 5.93385 1.66406 7.33398V12.6673C1.66406 14.0674 1.66406 14.7675 1.93655 15.3023C2.17623 15.7727 2.55868 16.1552 3.02909 16.3948C3.56387 16.6673 4.26393 16.6673 5.66406 16.6673Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -201,7 +202,7 @@
                                     <p>Our Media team is ready to discuss your needs and how our AI solutions can help.</p>
                                     <ul class="list-wrap">
                                         <li>
-                                            <a href="mailto:sayhello@DeveonHost.com">
+                                            <a href="mailto:contacthost@deveoninc.com">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path opacity="0.12" d="M11.5266 10.5969C10.9757 10.9825 10.7002 11.1754 10.4005 11.2501C10.1358 11.3161 9.85898 11.3161 9.59428 11.2501C9.29463 11.1754 9.01914 10.9825 8.46816 10.5969L1.66406 5.83398C1.66406 4.45327 2.78335 3.33398 4.16406 3.33398H15.8307C17.2114 3.33398 18.3307 4.45327 18.3307 5.83398L11.5266 10.5969Z" fill="currentColor" />
                                                     <path d="M17.914 15.0007L12.3783 10.0007M7.61644 10.0007L2.08076 15.0007M1.66406 5.83398L8.46816 10.5969C9.01914 10.9825 9.29463 11.1754 9.59428 11.2501C9.85898 11.3161 10.1358 11.3161 10.4005 11.2501C10.7002 11.1754 10.9757 10.9825 11.5266 10.5969L18.3307 5.83398M5.66406 16.6673H14.3307C15.7309 16.6673 16.4309 16.6673 16.9657 16.3948C17.4361 16.1552 17.8186 15.7727 18.0582 15.3023C18.3307 14.7675 18.3307 14.0674 18.3307 12.6673V7.33398C18.3307 5.93385 18.3307 5.23379 18.0582 4.69901C17.8186 4.2286 17.4361 3.84615 16.9657 3.60647C16.4309 3.33398 15.7309 3.33398 14.3307 3.33398H5.66406C4.26393 3.33398 3.56387 3.33398 3.02909 3.60647C2.55868 3.84615 2.17623 4.2286 1.93655 4.69901C1.66406 5.23379 1.66406 5.93385 1.66406 7.33398V12.6673C1.66406 14.0674 1.66406 14.7675 1.93655 15.3023C2.17623 15.7727 2.55868 16.1552 3.02909 16.3948C3.56387 16.6673 4.26393 16.6673 5.66406 16.6673Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
