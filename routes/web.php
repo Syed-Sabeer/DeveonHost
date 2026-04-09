@@ -5,6 +5,8 @@ use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Admin\HostingController as AdminHostingController;
 use App\Http\Controllers\Admin\HostingPlanController as AdminHostingPlanController;
 use App\Http\Controllers\Admin\ContactSubmissionController as AdminContactSubmissionController;
+use App\Http\Controllers\Admin\UserManagementController;
+use App\Http\Controllers\Admin\TransactionController as AdminTransactionController;
 
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Auth\LoginController;
@@ -93,6 +95,12 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
 
     Route::get('contact-submissions', [AdminContactSubmissionController::class, 'index'])->name('contact-submissions.index');
     Route::get('contact-submissions/{contactSubmission}', [AdminContactSubmissionController::class, 'show'])->name('contact-submissions.show');
+
+    Route::get('users', [UserManagementController::class, 'index'])->name('users.index');
+    Route::get('users/{user}', [UserManagementController::class, 'show'])->name('users.show');
+
+    Route::get('transactions', [AdminTransactionController::class, 'index'])->name('transactions.index');
+    Route::get('transactions/{transaction}', [AdminTransactionController::class, 'show'])->name('transactions.show');
 
     Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 });

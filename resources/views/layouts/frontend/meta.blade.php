@@ -1,6 +1,6 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Hostinkar - Web Hosting HTML Template</title>
+    <title>DeveonHost - Web Hosting by Deveon Inc.</title>
     <meta name="description" content="DeveonHost - Web Hosting HTML Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 

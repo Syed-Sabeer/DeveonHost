@@ -92,11 +92,11 @@
                         <tbody>
                             @foreach($recentOrders as $order)
                                 <tr>
-                                    <td>{{ $order['id'] }}</td>
-                                    <td>{{ $order['hosting'] }} - {{ $order['plan'] }}</td>
-                                    <td>{{ $order['billing_cycle'] }}</td>
-                                    <td><span class="badge bg-success">{{ $order['status'] }}</span></td>
-                                    <td>${{ $order['amount'] }}</td>
+                                    <td>{{ $order->order_number }}</td>
+                                    <td>{{ optional($order->hosting)->title }} - {{ optional($order->hostingPlan)->title }}</td>
+                                    <td>{{ ucfirst($order->billing_cycle) }}</td>
+                                    <td><span class="badge {{ $order->status === 'active' ? 'bg-success' : 'bg-secondary' }}">{{ ucfirst($order->status) }}</span></td>
+                                    <td>${{ number_format((float) $order->amount, 2) }}</td>
                                 </tr>
                             @endforeach
                         </tbody>

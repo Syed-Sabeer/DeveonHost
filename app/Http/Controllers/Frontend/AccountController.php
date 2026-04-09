@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Transaction;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -14,12 +15,16 @@ class AccountController extends Controller
     public function dashboard(): View
     {
         $user = auth()->user();
-        $orders = collect(session('customer_orders', []));
+        $orders = Transaction::query()
+            ->where('user_id', $user->id)
+            ->with(['hostingPlan', 'hosting'])
+            ->latest()
+            ->get();
 
         return view('frontend.account.dashboard', [
             'user' => $user,
             'totalOrders' => $orders->count(),
-            'activeServices' => $orders->where('status', 'Active')->count(),
+            'activeServices' => $orders->where('status', 'active')->count(),
             'recentOrders' => $orders->take(3),
         ]);
     }
@@ -80,7 +85,11 @@ class AccountController extends Controller
 
     public function orders(): View
     {
-        $orders = collect(session('customer_orders', []));
+        $orders = Transaction::query()
+            ->where('user_id', auth()->id())
+            ->with(['hostingPlan', 'hosting'])
+            ->latest()
+            ->get();
 
         return view('frontend.account.orders', [
             'orders' => $orders,

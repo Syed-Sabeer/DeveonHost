@@ -26,4 +26,9 @@ class Hosting extends Model
     {
         return $this->hasMany(HostingPlan::class);
     }
+
+    public function transactions(): HasMany
+    {
+        return $this->hasMany(Transaction::class);
+    }
 }

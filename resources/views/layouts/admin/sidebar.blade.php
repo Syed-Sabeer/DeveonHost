@@ -57,5 +57,19 @@
                 <div>Contact Submissions</div>
             </a>
         </li>
+
+        <li class="menu-item {{ request()->routeIs('admin.users.*') ? 'active' : '' }}">
+            <a href="{{ route('admin.users.index') }}" class="menu-link">
+                <i class="menu-icon icon-base ti tabler-users"></i>
+                <div>Registered Users</div>
+            </a>
+        </li>
+
+        <li class="menu-item {{ request()->routeIs('admin.transactions.*') ? 'active' : '' }}">
+            <a href="{{ route('admin.transactions.index') }}" class="menu-link">
+                <i class="menu-icon icon-base ti tabler-credit-card"></i>
+                <div>Transactions</div>
+            </a>
+        </li>
     </ul>
 </aside>

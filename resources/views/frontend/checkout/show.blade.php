@@ -26,6 +26,15 @@
     justify-content: space-between;
     align-items: center;
 }
+#card-element {
+    border: 1px solid #dce6ff;
+    border-radius: 10px;
+    background: #fff;
+    padding: 14px 12px;
+}
+#card-errors {
+    font-size: 13px;
+}
 </style>
 @endsection
 
@@ -44,8 +53,9 @@
                                 <div class="alert alert-danger">{{ $errors->first() }}</div>
                             @endif
 
-                            <form action="{{ route('checkout.process', $plan) }}" method="POST">
+                            <form id="stripe-checkout-form" action="{{ route('checkout.process', $plan) }}" method="POST">
                                 @csrf
+                                <input type="hidden" name="payment_method_id" id="payment_method_id">
                                 <div class="mb-3">
                                     <label class="form-label">Billing Name</label>
                                     <input type="text" name="billing_name" value="{{ old('billing_name', auth()->user()->name) }}" class="form-control" required>
@@ -74,7 +84,12 @@
                                         <small class="text-success">Annual billing includes {{ number_format($annualDiscount, 0) }}% savings.</small>
                                     @endif
                                 </div>
-                                <button type="submit" class="tg-btn">Pay Securely with Stripe</button>
+                                <div class="mb-3">
+                                    <label class="form-label">Card Details</label>
+                                    <div id="card-element"></div>
+                                    <div id="card-errors" class="text-danger mt-2"></div>
+                                </div>
+                                <button type="submit" id="pay-button" class="tg-btn">Pay Securely with Stripe</button>
                             </form>
                         </div>
                         <div class="col-lg-6">
@@ -99,4 +114,68 @@
         </div>
     </div>
 </main>
+@endsection
+
+@section('script')
+<script src="https://js.stripe.com/v3/"></script>
+<script>
+    (function () {
+        var key = @json($stripePublishableKey);
+        if (!key) {
+            var cardErrors = document.getElementById('card-errors');
+            if (cardErrors) {
+                cardErrors.textContent = 'Stripe publishable key is missing. Please contact support.';
+            }
+            return;
+        }
+
+        var stripe = Stripe(key);
+        var elements = stripe.elements();
+        var card = elements.create('card', {
+            hidePostalCode: true,
+        });
+        card.mount('#card-element');
+
+        var form = document.getElementById('stripe-checkout-form');
+        var payButton = document.getElementById('pay-button');
+        var cardErrors = document.getElementById('card-errors');
+
+        card.on('change', function (event) {
+            cardErrors.textContent = event.error ? event.error.message : '';
+        });
+
+        form.addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            if (payButton) {
+                payButton.disabled = true;
+                payButton.textContent = 'Processing...';
+            }
+
+            var billingName = form.querySelector('input[name="billing_name"]').value;
+            var billingEmail = form.querySelector('input[name="billing_email"]').value;
+
+            var result = await stripe.createPaymentMethod({
+                type: 'card',
+                card: card,
+                billing_details: {
+                    name: billingName,
+                    email: billingEmail,
+                },
+            });
+
+            if (result.error) {
+                cardErrors.textContent = result.error.message;
+                if (payButton) {
+                    payButton.disabled = false;
+                    payButton.textContent = 'Pay Securely with Stripe';
+                }
+                return;
+            }
+
+            document.getElementById('payment_method_id').value = result.paymentMethod.id;
+            form.submit();
+        });
+    })();
+</script>
 @endsection

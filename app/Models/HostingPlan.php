@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class HostingPlan extends Model
 {
@@ -19,6 +20,9 @@ class HostingPlan extends Model
         'discount_percentage_annual',
         'features',
         'is_active',
+        'stripe_product_id',
+        'stripe_monthly_price_id',
+        'stripe_annual_price_id',
     ];
 
     protected $casts = [
@@ -31,5 +35,10 @@ class HostingPlan extends Model
     public function hosting(): BelongsTo
     {
         return $this->belongsTo(Hosting::class);
+    }
+
+    public function transactions(): HasMany
+    {
+        return $this->hasMany(Transaction::class);
     }
 }

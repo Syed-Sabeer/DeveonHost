@@ -4,12 +4,18 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\HostingPlan;
+use App\Models\Transaction;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\View\View;
-use Stripe\Checkout\Session;
+use Stripe\Customer;
+use Stripe\Exception\InvalidRequestException;
+use Stripe\PaymentMethod;
+use Stripe\Price as StripePrice;
+use Stripe\Product;
 use Stripe\Stripe;
+use Stripe\Subscription;
 
 class CheckoutController extends Controller
 {
@@ -34,6 +40,7 @@ class CheckoutController extends Controller
             'annualTotal' => $annualTotal,
             'annualDiscountedTotal' => $annualDiscountedTotal,
             'annualDiscount' => $annualDiscount,
+            'stripePublishableKey' => (string) config('services.stripe.key'),
         ]);
     }
 
@@ -43,6 +50,7 @@ class CheckoutController extends Controller
             'billing_cycle' => ['required', 'in:monthly,annual'],
             'billing_name' => ['required', 'string', 'max:120'],
             'billing_email' => ['required', 'email', 'max:150'],
+            'payment_method_id' => ['required', 'string'],
         ]);
 
         $plan->load('hosting');
@@ -61,106 +69,175 @@ class CheckoutController extends Controller
         $billingCycle = $request->input('billing_cycle');
         $total = $billingCycle === 'annual' ? $annualDiscountedTotal : $monthlyTotal;
 
-        $pendingOrder = [
-            'id' => 'ORD-' . now()->format('YmdHis') . '-' . random_int(100, 999),
-            'hosting' => optional($plan->hosting)->title,
-            'plan' => $plan->title,
-            'billing_cycle' => ucfirst($billingCycle),
-            'amount' => number_format($total, 2, '.', ''),
-            'status' => 'Active',
-            'created_at' => now()->format('Y-m-d H:i'),
-        ];
+        $orderNumber = 'ORD-' . now()->format('YmdHis') . '-' . random_int(100, 999);
 
         try {
+            if (! config('services.stripe.secret')) {
+                return back()->with('error', 'Stripe secret key is missing. Please configure STRIPE_SECRET in environment settings.');
+            }
+
             Stripe::setApiKey((string) config('services.stripe.secret'));
 
-            $session = Session::create([
-                'mode' => 'payment',
-                'customer_email' => $request->input('billing_email'),
-                'line_items' => [[
-                    'quantity' => 1,
-                    'price_data' => [
-                        'currency' => 'usd',
-                        'unit_amount' => (int) round($total * 100),
-                        'product_data' => [
-                            'name' => optional($plan->hosting)->title . ' - ' . $plan->title,
-                            'description' => 'Billing cycle: ' . ucfirst($billingCycle),
-                        ],
-                    ],
-                ]],
+            $customer = $this->getOrCreateStripeCustomer(
+                $request->input('billing_email'),
+                $request->input('billing_name')
+            );
+
+            $paymentMethodId = $request->input('payment_method_id');
+
+            $paymentMethod = PaymentMethod::retrieve($paymentMethodId);
+            try {
+                $paymentMethod->attach([
+                    'customer' => $customer->id,
+                ]);
+            } catch (InvalidRequestException $exception) {
+                // If the method is already attached to this customer, continue.
+                $errorMessage = strtolower($exception->getMessage());
+                if (! str_contains($errorMessage, 'already attached')) {
+                    throw $exception;
+                }
+            }
+
+            Customer::update($customer->id, [
+                'invoice_settings' => [
+                    'default_payment_method' => $paymentMethodId,
+                ],
+            ]);
+
+            $priceId = $this->resolveRecurringPriceId($plan, $billingCycle, $total);
+
+            $subscription = Subscription::create([
+                'customer' => $customer->id,
+                'items' => [
+                    ['price' => $priceId],
+                ],
+                'default_payment_method' => $paymentMethodId,
+                'payment_behavior' => 'error_if_incomplete',
+                'collection_method' => 'charge_automatically',
                 'metadata' => [
+                    'order_number' => $orderNumber,
                     'plan_id' => (string) $plan->id,
                     'billing_cycle' => $billingCycle,
-                    'order_id' => $pendingOrder['id'],
+                    'user_id' => (string) auth()->id(),
                 ],
-                'success_url' => route('checkout.success', $plan) . '?session_id={CHECKOUT_SESSION_ID}',
-                'cancel_url' => route('checkout.cancel', $plan),
+                'expand' => ['latest_invoice.payment_intent'],
             ]);
 
-            session([
-                'pending_checkout' => [
-                    'plan_id' => $plan->id,
-                    'order' => $pendingOrder,
+            $paymentIntent = optional(optional($subscription->latest_invoice)->payment_intent);
+
+            Transaction::create([
+                'user_id' => (int) auth()->id(),
+                'hosting_plan_id' => (int) $plan->id,
+                'hosting_id' => (int) ($plan->hosting_id ?? 0) ?: null,
+                'order_number' => $orderNumber,
+                'stripe_customer_id' => $customer->id,
+                'stripe_subscription_id' => $subscription->id,
+                'stripe_payment_intent_id' => $paymentIntent->id ?? null,
+                'stripe_invoice_id' => optional($subscription->latest_invoice)->id,
+                'amount' => number_format($total, 2, '.', ''),
+                'currency' => 'usd',
+                'billing_cycle' => $billingCycle,
+                'status' => $subscription->status === 'active' ? 'active' : 'pending',
+                'payment_status' => $paymentIntent->status ?? null,
+                'payment_method' => 'card',
+                'starts_at' => now(),
+                'renews_at' => $billingCycle === 'annual' ? now()->addYear() : now()->addMonth(),
+                'meta' => [
+                    'stripe_status' => $subscription->status,
+                    'plan_title' => $plan->title,
+                    'hosting_title' => optional($plan->hosting)->title,
                 ],
             ]);
 
-            return redirect()->away($session->url);
+            return redirect()->route('account.orders')->with('success', 'Payment successful. Subscription is active and auto-renew enabled.');
         } catch (\Throwable $exception) {
-            Log::error('Stripe checkout session creation failed', [
+            Log::error('Stripe subscription checkout failed', [
                 'plan_id' => $plan->id,
                 'error' => $exception->getMessage(),
             ]);
 
-            return back()->with('error', 'Unable to start Stripe checkout right now. Please try again in a moment.');
+            return back()->with('error', 'Payment failed: ' . $exception->getMessage());
         }
     }
 
     public function success(Request $request, HostingPlan $plan): RedirectResponse
     {
-        $sessionId = $request->query('session_id');
-
-        if (! $sessionId) {
-            return redirect()->route('checkout.show', $plan)->with('error', 'Missing Stripe session information.');
-        }
-
-        try {
-            Stripe::setApiKey((string) config('services.stripe.secret'));
-            $session = Session::retrieve($sessionId);
-
-            if (($session->payment_status ?? null) !== 'paid') {
-                return redirect()->route('checkout.show', $plan)->with('warning', 'Payment was not completed. Please try again.');
-            }
-
-            $pending = session('pending_checkout');
-            if (! is_array($pending) || (int) ($pending['plan_id'] ?? 0) !== (int) $plan->id) {
-                return redirect()->route('account.orders')->with('warning', 'Payment succeeded, but order summary is not available in this session.');
-            }
-
-            $order = $pending['order'];
-            $order['stripe_session_id'] = $sessionId;
-
-            $orders = collect(session('customer_orders', []));
-            $orders->prepend($order);
-
-            session([
-                'customer_orders' => $orders->take(25)->values()->all(),
-            ]);
-            session()->forget('pending_checkout');
-
-            return redirect()->route('account.orders')->with('success', 'Payment successful. Your order is now active.');
-        } catch (\Throwable $exception) {
-            Log::error('Stripe checkout success verification failed', [
-                'plan_id' => $plan->id,
-                'session_id' => $sessionId,
-                'error' => $exception->getMessage(),
-            ]);
-
-            return redirect()->route('checkout.show', $plan)->with('error', 'Payment verification failed. Please contact support with your payment reference.');
-        }
+        return redirect()->route('checkout.show', $plan);
     }
 
     public function cancel(HostingPlan $plan): RedirectResponse
     {
-        return redirect()->route('checkout.show', $plan)->with('info', 'Checkout was canceled. You can complete it anytime.');
+        return redirect()->route('checkout.show', $plan)->with('info', 'Checkout canceled.');
+    }
+
+    private function getOrCreateStripeCustomer(string $email, string $name)
+    {
+        $existing = Customer::all([
+            'email' => $email,
+            'limit' => 1,
+        ]);
+
+        if (! empty($existing->data)) {
+            return $existing->data[0];
+        }
+
+        return Customer::create([
+            'email' => $email,
+            'name' => $name,
+        ]);
+    }
+
+    private function resolveRecurringPriceId(HostingPlan $plan, string $billingCycle, float $amount): string
+    {
+        $priceColumn = $billingCycle === 'annual' ? 'stripe_annual_price_id' : 'stripe_monthly_price_id';
+        $interval = $billingCycle === 'annual' ? 'year' : 'month';
+        $unitAmount = (int) round($amount * 100);
+
+        if (! $plan->stripe_product_id) {
+            $product = Product::create([
+                'name' => optional($plan->hosting)->title . ' - ' . $plan->title,
+                'metadata' => [
+                    'plan_id' => (string) $plan->id,
+                    'hosting_id' => (string) $plan->hosting_id,
+                ],
+            ]);
+
+            $plan->stripe_product_id = $product->id;
+            $plan->save();
+        }
+
+        $existingPriceId = $plan->{$priceColumn};
+        if ($existingPriceId) {
+            try {
+                $existingPrice = StripePrice::retrieve($existingPriceId);
+                if ((int) $existingPrice->unit_amount === $unitAmount && ($existingPrice->recurring->interval ?? null) === $interval) {
+                    return $existingPriceId;
+                }
+            } catch (\Throwable $exception) {
+                Log::warning('Stripe price retrieve failed, recreating.', [
+                    'price_id' => $existingPriceId,
+                    'error' => $exception->getMessage(),
+                ]);
+            }
+        }
+
+        $price = StripePrice::create([
+            'unit_amount' => $unitAmount,
+            'currency' => 'usd',
+            'recurring' => [
+                'interval' => $interval,
+                'interval_count' => 1,
+            ],
+            'product' => $plan->stripe_product_id,
+            'metadata' => [
+                'plan_id' => (string) $plan->id,
+                'billing_cycle' => $billingCycle,
+            ],
+        ]);
+
+        $plan->{$priceColumn} = $price->id;
+        $plan->save();
+
+        return $price->id;
     }
 }
